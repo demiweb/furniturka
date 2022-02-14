@@ -2240,5 +2240,60 @@ main {
   display: inline-block;
   width: auto;
 }
+.footer-bottom {
+  background: #222222;
+}
+.footer-bottom__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
+  .header-social {
+    margin: 0;
+
+    ul {
+      li {
+        a {
+          filter: invert(1);
+        }
+      }
+    }
+  }
+
+  .copyr {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 165%;
+    color: #747474;
+  }
+
+  > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    li {
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 0 15px;
+
+        &:hover, &.active {
+          color: #747474;
+        }
+      }
+    }
+  }
+}
 @import "media";
