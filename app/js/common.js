@@ -163,7 +163,21 @@ function hoverableMenu() {
 
 hoverableMenu();
 
+//lang
+let langBlock = [...document.querySelectorAll('.header-lang')];
 
+function openLangMob() {
+    if (langBlock.length) {
+        langBlock.forEach((btn)=> {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('active');
+            })
+        })
+    }
+}
+openLangMob();
+
+//burger
 let burger = [...document.querySelectorAll('.header-burger')];
 
 function openMobileMenu() {
@@ -187,6 +201,9 @@ function openCatMob() {
             btn.addEventListener('click', () => {
                 btn.closest('.catalog__block').classList.toggle('visible');
                 document.querySelector('.backplate-menu').classList.toggle('visible');
+                if (document.querySelector('.menu-item-has-children.open')) {
+                    document.querySelector('.menu-item-has-children.open').classList.remove('open');
+                }
             })
         })
     }
@@ -215,9 +232,7 @@ function openBtnMenu() {
         btnMenu.forEach((btn) => {
             btn.addEventListener('click', () => {
                 btn.closest('.header-catalog__btn').classList.toggle('active');
-
-                document.querySelector('.backplate-menu').classList.toggle('visible');
-
+                document.querySelector('.header-menu').classList.toggle('active');
 
             })
         });
@@ -229,7 +244,34 @@ function openBtnMenu() {
 
 
 openBtnMenu();
+//catalogControlMob
+let aLinkCat = [...document.querySelectorAll('.header-catalog__nav > ul > li.menu-item-has-children > a')];
 
+function openLinkCat() {
+    if (aLinkCat.length) {
+        aLinkCat.forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (document.querySelector('.menu-item-has-children.open')) {
+                    console.log('tut');
+                    if (btn.closest('.menu-item-has-children').classList.contains('open')) {
+                        btn.closest('.menu-item-has-children').classList.remove('open');
+                        console.log('tut2')
+                    } else {
+                        document.querySelector('.menu-item-has-children.open').classList.remove('open');
+                        btn.closest('.menu-item-has-children').classList.add('open');
+
+                    }
+                }
+                 else {
+                    btn.closest('.menu-item-has-children').classList.add('open');
+
+                }
+            })
+        })
+    }
+}
+openLinkCat();
 
 //sliders
 
