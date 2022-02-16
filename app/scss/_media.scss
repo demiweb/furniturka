@@ -329,6 +329,14 @@
 }
 
 @media screen and (max-width: 992px) {
+  .header-catalog__nav > ul > li.menu-item-has-children.open > a {
+    background-color: rgba(242, 0, 0, 0.64);
+    > .img {
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
   .footer-container .numbers ul li a {
     font-size: 12px;
   }
