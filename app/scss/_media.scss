@@ -73,6 +73,12 @@
   overflow-y: auto;
 }
 @media screen and (max-width: 1220px) {
+  .side-container {
+    margin-bottom: 60px;
+  }
+  .cards-list.cards-list--five .single-card {
+    width: calc((100% / 4) - (3px / 4));
+  }
   .footer-container {
     padding: 50px 0;
   }
@@ -216,9 +222,17 @@
   .default-section {
     padding: 60px 0;
   }
+  .cards-list.horizontal .card-inner .img img {
+    height: 100%;
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 1050px) {
+  .catalog__block {
+    margin-top: 10px;
+  }
+
   .footer-column span {
     font-size: 14px;
     line-height: 1.2;
@@ -329,6 +343,15 @@
 }
 
 @media screen and (max-width: 992px) {
+  .cards-list.cards-list--five .single-card {
+    width: calc((100% / 3) - (2px / 3));
+  }
+  .cards-list.horizontal .card-inner .img {
+    width: 100px;
+  }
+  .cards-list.horizontal .card-inner {
+    padding-left: 120px;
+  }
   .header-catalog__nav > ul > li.menu-item-has-children.open > a {
     background-color: rgba(242, 0, 0, 0.64);
     > .img {
@@ -562,8 +585,71 @@
     display: none;
   }
 }
-
+.ocf-theme-light-block .ocf-footer {
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0;
+  padding-top: 10px;
+  background: #fafafa;
+  .ocf-btn {
+    padding: 6px 4px;
+    font-size: 12px;
+  }
+}
+.side-block .ocf-container .ocf-content .ocf-filter {
+  border-radius: 0;
+}
 @media screen and (max-width: 767px) {
+  .ocf-theme-light-block .ocf-open .ocf-filter-header {
+    box-sizing: border-box;
+  }
+  .side-block .ocf-filter-header {
+    margin-bottom: 5px;
+  }
+  .ocf-open .ocf-filter-body > .ocf-value-list {
+    box-sizing: border-box;
+  }
+  .side-block .ocf-container {
+    margin-top: 0;
+  }
+  .ocf-btn-mobile-fixed {
+    display: none !important;
+  }
+  .ocf-btn-mobile-static {
+    margin-bottom: 0px !important;
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
+    margin-right: auto;
+    .ocf-btn {
+      background: $red;
+      span, i {
+        color: #fff;
+        filter: brightness(5);
+      }
+    }
+  }
+
+  .side-container {
+    margin-bottom: 30px;
+  }
+  .side-container .container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .breadcrumbs {
+    margin-bottom: 14px;
+  }
+  .section__center-head {
+    margin-top: 12px;
+    padding: 0;
+  }
+  .side-block {
+    width: 100%;
+  }
   .footer-column span {
     margin-bottom: 14px;
   }
@@ -682,6 +768,33 @@
   outline: none !important;
 }
 @media screen and (max-width: 600px) {
+  .pagination ul {
+    justify-content: space-between;
+
+    li {
+      a, span {
+        width: 43px;
+        height: 43px;
+      }
+    }
+  }
+  .cards-list.horizontal .card-inner .img {
+    width: 80px;
+  }
+  .cards-list.horizontal .card-inner {
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    .code {
+      top: 10px;
+      left: 10px;
+    }
+  }
+  .cards-list.horizontal .card-inner .img img {
+    width: 100%;
+    height: auto;
+  }
   .footer-container {
     flex-direction: column;
     padding: 30px 0;
@@ -898,6 +1011,38 @@
 }
 
 @media screen and (max-width: 500px) {
+  .ocf-btn-mobile-static {
+    margin-bottom: 6px !important;
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
+    margin-right: 0;
+    width: 100%;
+    margin-top: 6px;
+    .ocf-btn {
+      width: 100%;
+    }
+  }
+  .control-line {
+    flex-wrap: wrap;
+  }
+  .control-btn {
+    padding: 6px 10px;
+  }
+  .control-sort p {
+    font-size: 12px;
+  }
+  .control-sort select {
+    font-size: 11px;
+  }
+  .control-line {
+    justify-content: space-between;
+  }
+  .cards-list.horizontal .single-card {
+    width: 100% !important;
+  }
+  .cards-list.cards-list--five .single-card {
+    width: calc((100% / 2) - (1px / 2));
+  }
   .header-catalog__nav > ul > li ul li a .img {
     width: 34px;
   }
@@ -963,6 +1108,17 @@
 }
 
 @media screen and (max-width: 360px) {
+  .pagination ul li a, .pagination ul li span {
+    width: 35px;
+    height: 35px;
+  }
+  .control-btn {
+    padding: 2px 8px;
+    svg {
+      width: 12px;
+      height: auto;
+    }
+  }
   .home-slider__text ul {
     display: none;
   }

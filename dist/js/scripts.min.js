@@ -377,7 +377,7 @@ $('.rating-stars').raty(
         hints: ['a', null, '', null, '', null]
     }
 );
-
+//add to cart, fav
 let singleCard = [...document.querySelectorAll('.single-card')];
 
 function preventSingleCard() {
@@ -420,6 +420,8 @@ function preventSingleCard() {
 
 preventSingleCard();
 
+
+
 $('input.phone-number').each(function () {
 
     $(this).addClass('mask-phone-ua');
@@ -427,7 +429,7 @@ $('input.phone-number').each(function () {
 });
 $(".mask-phone-ua").mask('+38(999)999-99-99');
 
-
+//show seo
 let hiddenCarr = [...document.querySelectorAll('.show-seo')];
 
 function openHideText() {
@@ -449,7 +451,35 @@ function openHideText() {
 }
 openHideText();
 
+//change catalog view
+let controlBtn = [...document.querySelectorAll('.control-btn')];
+function changeViewCatalog() {
+    if (controlBtn.length) {
+        controlBtn.forEach((btn, k) => {
+            btn.addEventListener('click', () => {
+                if (btn.classList.contains('active')) {
 
+                } else {
+
+                    document.querySelector('.control-btn.active').classList.remove('active');
+
+
+                    btn.classList.add('active');
+                    if (k === 0) {
+                        document.querySelector('.cards-list').classList.add('horizontal');
+                    } else {
+                        document.querySelector('.cards-list').classList.remove('horizontal');
+
+                    }
+                }
+
+            })
+        })
+    }
+}
+changeViewCatalog();
+
+//modals
 let carrMod = [...document.querySelectorAll('.mod--carr')];
 
 function openCarrMod() {
