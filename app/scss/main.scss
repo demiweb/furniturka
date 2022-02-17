@@ -3013,6 +3013,10 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
   .catalog__block {
     width: 100%;
   }
+  .ocf-theme-light-block .ocf-dropdown .ocf-filter-body > .ocf-value-list {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 
   .ocf-container {
     margin-top: 20px;
