@@ -479,6 +479,53 @@ function changeViewCatalog() {
 }
 changeViewCatalog();
 
+//product slider
+
+let cardPhotosBlock1 = [...document.querySelectorAll('.product-preview')];
+
+function startPhotosSlider2() {
+    if (!cardPhotosBlock1.length) {
+
+    } else {
+        cardPhotosBlock1.forEach((blc) => {
+            let mainSlides = blc.querySelector('.product-slider__main');
+            let thumbsSlides = blc.querySelector('.product-slider__thumbs');
+            var swiperThumb = new Swiper(thumbsSlides, {
+                spaceBetween: 7,
+                slidesPerView: 4,
+                freeMode: false,
+                watchSlidesProgress: true,
+                direction: 'vertical',
+                centeredSlides: false,
+                loop: false,
+                draggable: true,
+                breakpoints: {
+
+                }
+            });
+            var swiper2 = new Swiper(mainSlides, {
+                spaceBetween: 10,
+                slidesPerView: 1,
+                loop: true,
+                thumbs: {
+                    swiper: swiperThumb,
+                }
+
+            });
+        })
+    }
+}
+
+startPhotosSlider2();
+
+$('.btn-open-more').on('click', function() {
+    $('.product-slider__main .img').trigger('click');
+});
+
+
+//product slider
+
+
 //modals
 let carrMod = [...document.querySelectorAll('.mod--carr')];
 
