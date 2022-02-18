@@ -492,7 +492,7 @@ function startPhotosSlider2() {
             let thumbsSlides = blc.querySelector('.product-slider__thumbs');
             var swiperThumb = new Swiper(thumbsSlides, {
                 spaceBetween: 7,
-                slidesPerView: 4,
+                slidesPerView: 3,
                 freeMode: false,
                 watchSlidesProgress: true,
                 direction: 'vertical',
@@ -500,7 +500,14 @@ function startPhotosSlider2() {
                 loop: false,
                 draggable: true,
                 breakpoints: {
+                    // when window width is >= 320px
 
+                    // when window width is >= 480px
+
+                    993: {
+                        spaceBetween: 7,
+                        slidesPerView: 4,
+                    }
                 }
             });
             var swiper2 = new Swiper(mainSlides, {

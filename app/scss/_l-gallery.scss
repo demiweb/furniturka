@@ -48,7 +48,12 @@
     }
   }
 }
-
+@media screen and (min-width: 1051px) {
+  .lg-sub-html {
+    font-size: 24px !important;
+    line-height: 163%;
+  }
+}
 @media screen and (min-width: 768px) {
   .lg-sub-html {
     position: absolute !important;
@@ -56,8 +61,8 @@
     bottom: inherit !important;
     display: inline-block;
     background: transparent !important;
-    font-size: 24px !important;
-    line-height: 163%;
+    font-size: 16px;
+    max-width: 50%;
     color: #000 !important;
     width: initial !important;
     text-align: left !important;
