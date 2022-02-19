@@ -357,6 +357,54 @@ function homeSlider() {
 
 homeSlider();
 
+//complect slider
+let complSld = [...document.querySelectorAll('.complect-slides')];
+
+function compSlider() {
+    if (!complSld.length) {
+
+    } else {
+        complSld.forEach((sld) => {
+            let sldCont = sld.querySelector('.complect-container');
+            let sldNext = sld.querySelector('.btn-slides--next');
+            let sldPrev = sld.querySelector('.btn-slides--prev');
+            let pagin = sld.querySelector('.dots');
+            const swiper2 = new Swiper(sldCont, {
+                // Optional parameters
+                loop: false,
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                speed: 600,
+                spaceBetween: 0,
+                navigation: {
+                    nextEl: sldNext,
+                    prevEl: sldPrev,
+                },
+                pagination: {
+                    el: pagin,
+                    type: 'bullets',
+                    bulletActiveClass: 'active',
+                    bulletClass: 'single-dot',
+                    bulletElement: 'div',
+                    clickable: true,
+                    currentClass: 'current',
+                    spaceBetween: 2,
+                },
+                // autoplay: {
+                //     delay: 4000,
+                //     pauseOnMouseEnter: true,
+                // },
+
+
+            });
+        })
+    }
+}
+
+compSlider();
+
+//complect slider
+
 
 
 
@@ -389,31 +437,34 @@ function preventSingleCard() {
 
             let fav = btn.querySelector('.fav');
             let cart = btn.querySelector('.add-cart');
-            fav.addEventListener('click', (e) => {
-                e.stopPropagation();
-                e.preventDefault();
-                fav.classList.toggle('active');
-            })
-            cart.addEventListener('click', (e) => {
-                e.stopPropagation();
-                e.preventDefault();
-                cart.classList.toggle('active');
-                if (document.querySelector('.modal-added')) {
-                    document.querySelector('.modal-added').classList.add('active');
-                    if (document.querySelector('.modal-added').classList.contains('active')) {
-                        clearTimeout(timeoutHandle);
-                        timeoutHandle = setTimeout(() => {
-                            document.querySelector('.modal-added').classList.remove('active');
-                        }, 5000);
-                    } else {
-                        timeoutHandle = setTimeout(() => {
-                            document.querySelector('.modal-added').classList.remove('active');
-                        }, 5000);
+            if (cart) {
+                fav.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    fav.classList.toggle('active');
+                });
+                cart.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    cart.classList.toggle('active');
+                    if (document.querySelector('.modal-added')) {
+                        document.querySelector('.modal-added').classList.add('active');
+                        if (document.querySelector('.modal-added').classList.contains('active')) {
+                            clearTimeout(timeoutHandle);
+                            timeoutHandle = setTimeout(() => {
+                                document.querySelector('.modal-added').classList.remove('active');
+                            }, 5000);
+                        } else {
+                            timeoutHandle = setTimeout(() => {
+                                document.querySelector('.modal-added').classList.remove('active');
+                            }, 5000);
+                        }
+
                     }
 
-                }
+                })
+            }
 
-            })
         })
     }
 }
@@ -531,6 +582,24 @@ $('.btn-open-more').on('click', function() {
 
 
 //product slider
+
+//deliv text, payment
+
+let devHead = [...document.querySelectorAll('.dev-head')];
+
+function openCloseDevHead() {
+    if (devHead.length) {
+        devHead.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('active');
+            })
+        })
+    }
+}
+openCloseDevHead();
+
+
+//deliv text, payment
 
 
 //modals
@@ -886,121 +955,19 @@ function goToRevs() {
 }
 goToRevs();
 
-//map mag
-let allMapsDots = [...document.querySelectorAll('.single-mag')];
-let addressCoord = [];
-function goToDotMap() {
-    allMapsDots = [...document.querySelectorAll('.single-loc')];
-    allMapsDots.forEach((ot) => {
-        let aLinkMap = ot.querySelector('.single-mag');
-        aLinkMap.addEventListener('click', (e) => {
-            // if (window.innerWidth > 640) {
-            e.preventDefault();
-            // }
-            document.getElementById("mapid").scrollIntoView();
 
-            let xCoord1 = Number(ot.dataset.locationX);
-            let yCoord1 = Number(ot.dataset.locationY);
-            map.setView([xCoord1, yCoord1], 18);
-            map.panTo(new L.LatLng(xCoord1, yCoord1));
-            markersPos[i].openPopup();
+//scroll item page
+let btnGoItems = [...document.querySelectorAll('.item-link')];
+function goToItemsSides() {
+    if (btnGoItems.length) {
+        btnGoItems.forEach((btn) => {
+            $(btn).click(function(e) {
+                e.preventDefault();
+                $([document.documentElement, document.body]).animate({
+                    scrollTop: $($(btn).attr('href')).offset().top - 120
+                }, 500);
+            });
         })
-    })
-}
-
-function ifHaveDots(x='49.27585599310113',y='31.94249562538696',zoom=6) {
-    if (!allMapsDots.length) {
-
-    } else {
-        addressCoord = [];
-
-        addressCoord=addressCoord2;
-        console.log(addressCoord);
-        createMapBuy(x,y,zoom);
     }
 }
-let changeItems = document.querySelector('.select-buy__container');
-function ifChangedItemsConsist() {
-    if (!changeItems) {
-
-    } else {
-        changeItems.onchange =  function()  {
-            console.log('changed');
-            ifHaveDots();
-            goToDotMap();
-        }
-        changeItems.addEventListener('change', () => {
-            console.log('changed');
-            ifHaveDots();
-            goToDotMap();
-        });
-    }
-}
-ifChangedItemsConsist();
-
-
-let numberOfChanges = 0;
-
-ifHaveDots();
-
-function createMapBuy(x,y,zoom) {
-    function createNewMap() {
-        let divMap = document.createElement('div');
-        divMap.id = 'mapid';
-        document.querySelector('.map-container').appendChild(divMap);
-    }
-    // console.log(addressCoord);
-    let mapDiv = document.querySelector('#mapid');
-
-    if (!mapDiv) {
-        createNewMap();
-    } else {
-        mapDiv.remove();
-        createNewMap();
-    }
-
-    var tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 18,
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
-        }),
-
-        latlng = L.latLng(x,y );
-
-    var map = L.map('mapid', {center: latlng, zoom: zoom, layers: [tiles]});
-
-    var markers = L.markerClusterGroup();
-    let markersPos = [];
-
-    for (var i = 0; i < addressCoord.length; i++) {
-        var a = addressCoord[i];
-        var title = a[2];
-        var marker = L.marker(new L.LatLng(a[0], a[1]), { title: title });
-        marker.bindPopup(title);
-        markers.addLayer(marker);
-        markersPos.push(marker);
-    }
-
-    map.addLayer(markers);
-    allMapsDots = [...document.querySelectorAll('.single-loc')];
-    allMapsDots.forEach((ot, i) => {
-        let aLinkMap = ot.querySelector('.single-mag');
-        aLinkMap.addEventListener('click', (e) => {
-            e.preventDefault();
-            $('html,body').animate({ scrollTop: $('#mapid').offset().top - 100 }, 600);
-
-
-
-            // let idMap = document.getElementById('mapid').getBoundingClientRect().top;
-
-
-            // e.preventDefault();
-            let xCoord1 = Number(ot.dataset.locationX);
-            let yCoord1 = Number(ot.dataset.locationY);
-
-            map.setView([xCoord1, yCoord1], 18);
-            map.panTo(new L.LatLng(xCoord1, yCoord1));
-            markersPos[i].openPopup();
-        })
-    })
-}
-//map mag
+goToItemsSides();

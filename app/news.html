@@ -17,7 +17,7 @@
 
 
 <main>
-    <div class="side-container">
+    <div class="side-container side-container--not-catalog">
         <div class="container">
 
 
@@ -328,1612 +328,228 @@
                 </div>
 
 
-                <aside id="column-left" class="col-sm-3 hidden-xs">
-                    <nav class="navbar navbar-default visible-xs" id="ocdepartment-mobile">
-                        <div class="container-fluid">
-                            <!-- Brand and toggle get grouped for better mobile display -->
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                        data-target="#ocdepartment-mobile-container" aria-expanded="false"
-                                        style="padding: 6px 10px;"><i class="fa fa-bars"></i></button>
-                                <a href="http://demo-vps.ocfilter.com/computers" class="navbar-brand"><i
-                                        class="fa fa-arrow-left"></i>&nbsp; Назад</a>
-                            </div>
-
-                            <div class="collapse navbar-collapse" id="ocdepartment-mobile-container"></div>
-                            <!-- /.navbar-collapse -->
-                        </div><!-- /.container-fluid -->
-                    </nav>
-
-                    <div class="ocf-container ocf-theme-light-block ocf-mobile-1 ocf-mobile-left ocf-vertical ocf-left"
-                         id="ocf-module-1">
-                        <style>
-                            @import url("ocfilter/core.css");
-                            @import url("ocfilter/mobile.css?") (max-width: 767px);
-                            @import url("ocfilter/desktop.css") (min-width: 768px);
-                        </style>
-
-                        <div class="ocf-content">
-                            <div class="ocf-header">
-                                <i class="ocf-icon ocf-icon-16 ocf-brand ocf-sliders"></i>
-
-                                Фильтр
-
-
-                                <button type="button" data-ocf="mobile"
-                                        class="ocf-btn ocf-btn-link ocf-mobile ocf-close-mobile"
-                                        aria-label="Close filter"><i class="ocf-icon ocf-icon-16 ocf-times"></i>
-                                </button>
-                            </div>
-
-                            <div class="ocf-body">
-                                <div class="ocf-filter-list ocf-clearfix">
-
-                                    <div class="ocf-filter ocf-slider ocf-has-input" id="ocf-filter-2-0-1">
-                                        <div class="ocf-filter-body">
-                                            <div class="ocf-filter-header" data-ocf="expand">
-                                                <i class="ocf-mobile ocf-icon ocf-arrow-long ocf-arrow-left"></i>
-
-                                                <span class="ocf-active-label">
-        $        <span id="ocf-text-min-2-0-1">81</span>
-                - <span id="ocf-text-max-2-0-1">15102</span>
-                      </span>
-
-
-                                                <span class="ocf-filter-name">Цена</span>
-
-                                                <span class="ocf-filter-header-append">
-
-
-        <span class="ocf-filter-discard ocf-icon ocf-icon-16 ocf-minus-circle" data-ocf-discard="2.0"></span>
-
-        <i class="ocf-mobile ocf-icon ocf-angle ocf-angle-right"></i>
-
-      </span>
-                                            </div><!-- /.ocf-filter-header -->
-
-
-                                            <div class="ocf-value-list">
-                                                <div class="ocf-input-group ocf-slider-input-group">
-                                                    <span class="ocf-input-group-addon">Грн</span>
-                                                    <input type="tel" name="ocf[2-0-1][min]" value="81"
-                                                           class="ocf-form-control" id="ocf-input-min-2-0-1"
-                                                           autocomplete="off"/>
-                                                    <span class="ocf-input-group-addon">-</span>
-                                                    <input type="tel" name="ocf[2-0-1][max]" value="15102"
-                                                           class="ocf-form-control" id="ocf-input-max-2-0-1"
-                                                           autocomplete="off"/>
-                                                </div>
-                                                <div class="ocf-value-slider">
-                                                    <div id="ocf-s-2-0-1" class="ocf-value-scale"
-                                                         data-filter-key="2.0"
-                                                         data-min="81"
-                                                         data-max="15102"
-                                                         data-range="true"
-                                                         data-min-start="81"
-                                                         data-max-start="15102"
-
-                                                         data-input-min="#ocf-input-min-2-0-1"
-                                                         data-input-max="#ocf-input-max-2-0-1"
-
-                                                         data-text-min="#ocf-text-min-2-0-1"
-                                                         data-text-max="#ocf-text-max-2-0-1"
-
-                                                         data-prefix="$"
-                                                         data-suffix=""
-
-                                                    ></div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="ocf-filter" id="ocf-filter-4-0-1">
-                                        <div class="ocf-filter-body">
-                                            <div class="ocf-filter-header" data-ocf="expand">
-                                                <i class="ocf-mobile ocf-icon ocf-arrow-long ocf-arrow-left"></i>
-
-                                                <span class="ocf-active-label"></span>
-
-
-                                                <span class="ocf-filter-name">Скидка</span>
-
-                                                <span class="ocf-filter-header-append">
-
-
-        <span class="ocf-filter-discard ocf-icon ocf-icon-16 ocf-minus-circle" data-ocf-discard="4.0"></span>
-
-        <i class="ocf-mobile ocf-icon ocf-angle ocf-angle-right"></i>
-
-      </span>
-                                            </div><!-- /.ocf-filter-header -->
-
-
-                                            <div class="ocf-value-list">
-
-                                                <div class="ocf-value-list-body">
-
-                                                    <button type="button" id="ocf-v-4-0-1-1"
-                                                            class="ocf-value ocf-checkbox" data-filter-key="4.0"
-                                                            data-value-id="1">
-                                                        <span class="ocf-value-input ocf-value-input-checkbox"></span>
-
-                                                        <span class="ocf-value-name">Только со cкидками</span>
-                                                        <span class="ocf-value-append">
-    <span class="ocf-value-count">33</span>
-  </span>
-                                                    </button>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="ocf-filter ocf-dropdown" id="ocf-filter-1-0-1">
-                                        <div class="ocf-filter-body">
-                                            <div class="ocf-filter-header" data-ocf="expand">
-                                                <i class="ocf-mobile ocf-icon ocf-arrow-long ocf-arrow-left"></i>
-
-                                                <span class="ocf-active-label"></span>
-
-
-                                                <span class="ocf-filter-name">Производитель</span>
-
-                                                <span class="ocf-filter-header-append">
-
-
-        <span class="ocf-filter-discard ocf-icon ocf-icon-16 ocf-minus-circle" data-ocf-discard="1.0"></span>
-
-        <i class="ocf-mobile ocf-icon ocf-angle ocf-angle-right"></i>
-
-        <i class="ocf-desktop ocf-icon ocf-angle ocf-angle-down"></i>
-
-      </span>
-                                            </div><!-- /.ocf-filter-header -->
-
-
-                                            <div class="ocf-value-list">
-                                                <div class="ocf-scroll-y">
-
-                                                    <div class="ocf-value-list-body">
-
-                                                        <button type="button" id="ocf-v-1-0-1260-1"
-                                                                class="ocf-value ocf-checkbox" data-filter-key="1.0"
-                                                                data-value-id="1260">
-                                                            <span class="ocf-value-input ocf-value-input-checkbox"></span>
-
-                                                            <span class="ocf-value-name">4GOOD</span>
-                                                            <span class="ocf-value-append">
-    <span class="ocf-value-count">7</span>
-  </span>
-                                                        </button>
-                                                        <button type="button" id="ocf-v-1-0-2706-1"
-                                                                class="ocf-value ocf-checkbox" data-filter-key="1.0"
-                                                                data-value-id="2706">
-                                                            <span class="ocf-value-input ocf-value-input-checkbox"></span>
-
-                                                            <span class="ocf-value-name">Dream Machines</span>
-                                                            <span class="ocf-value-append">
-    <span class="ocf-value-count">21</span>
-  </span>
-                                                        </button>
-                                                        <button type="button" id="ocf-v-1-0-1011-1"
-                                                                class="ocf-value ocf-checkbox" data-filter-key="1.0"
-                                                                data-value-id="1011">
-                                                            <span class="ocf-value-input ocf-value-input-checkbox"></span>
-
-                                                            <span class="ocf-value-name">IRBIS</span>
-                                                            <span class="ocf-value-append">
-    <span class="ocf-value-count">29</span>
-  </span>
-                                                        </button>
-                                                        <button type="button" id="ocf-v-1-0-369-1"
-                                                                class="ocf-value ocf-checkbox" data-filter-key="1.0"
-                                                                data-value-id="369">
-                                                            <span class="ocf-value-input ocf-value-input-checkbox"></span>
-
-                                                            <span class="ocf-value-name">IRU</span>
-                                                            <span class="ocf-value-append">
-    <span class="ocf-value-count">1</span>
-  </span>
-                                                        </button>
-                                                        <button type="button" id="ocf-v-1-0-924-1"
-                                                                class="ocf-value ocf-checkbox" data-filter-key="1.0"
-                                                                data-value-id="924">
-                                                            <span class="ocf-value-input ocf-value-input-checkbox"></span>
-
-                                                            <span class="ocf-value-name">Krez</span>
-                                                            <span class="ocf-value-append">
-    <span class="ocf-value-count">9</span>
-  </span>
-                                                        </button>
-                                                        <button type="button" id="ocf-v-1-0-406-1"
-                                                                class="ocf-value ocf-checkbox" data-filter-key="1.0"
-                                                                data-value-id="406">
-                                                            <span class="ocf-value-input ocf-value-input-checkbox"></span>
-
-                                                            <span class="ocf-value-name">MSI</span>
-                                                            <span class="ocf-value-append">
-    <span class="ocf-value-count">499</span>
-  </span>
-                                                        </button>
-                                                        <button type="button" id="ocf-v-1-0-590-1"
-                                                                class="ocf-value ocf-checkbox" data-filter-key="1.0"
-                                                                data-value-id="590">
-                                                            <span class="ocf-value-input ocf-value-input-checkbox"></span>
-
-                                                            <span class="ocf-value-name">PNY</span>
-                                                            <span class="ocf-value-append">
-    <span class="ocf-value-count">3</span>
-  </span>
-                                                        </button>
-                                                        <button type="button" id="ocf-v-1-0-480-1"
-                                                                class="ocf-value ocf-checkbox" data-filter-key="1.0"
-                                                                data-value-id="480">
-                                                            <span class="ocf-value-input ocf-value-input-checkbox"></span>
-
-                                                            <span class="ocf-value-name">Xiaomi</span>
-                                                            <span class="ocf-value-append">
-    <span class="ocf-value-count">21</span>
-  </span>
-                                                        </button>
-                                                    </div>
-
-                                                    <div class="ocf-collapse ocf-collapse-value"
-                                                         id="ocf-hidden-values-1-0-1" data-ocf-load="values"
-                                                         data-filter-key="1.0">
-                                                        <div class="ocf-value-list">
-                                                            <div class="ocf-value-list-body">
-                                                                <button type="button" id="ocf-v-1-0-58-1"
-                                                                        class="ocf-value ocf-checkbox"
-                                                                        data-filter-key="1.0" data-value-id="58">
-                                                                    <span class="ocf-value-input ocf-value-input-checkbox"></span>
-                                                                    <span class="ocf-value-name">Acer</span> <span
-                                                                        class="ocf-value-append"> <span
-                                                                        class="ocf-value-count">17</span> </span>
-                                                                </button>
-                                                                <button type="button" id="ocf-v-1-0-59-1"
-                                                                        class="ocf-value ocf-checkbox"
-                                                                        data-filter-key="1.0" data-value-id="59">
-                                                                    <span class="ocf-value-input ocf-value-input-checkbox"></span>
-                                                                    <span class="ocf-value-name">Apple</span> <span
-                                                                        class="ocf-value-append"> <span
-                                                                        class="ocf-value-count">40</span> </span>
-                                                                </button>
-                                                                <button type="button" id="ocf-v-1-0-63-1"
-                                                                        class="ocf-value ocf-checkbox"
-                                                                        data-filter-key="1.0" data-value-id="63">
-                                                                    <span class="ocf-value-input ocf-value-input-checkbox"></span>
-                                                                    <span class="ocf-value-name">ASUS</span> <span
-                                                                        class="ocf-value-append"> <span
-                                                                        class="ocf-value-count">32</span> </span>
-                                                                </button>
-                                                                <button type="button" id="ocf-v-1-0-60-1"
-                                                                        class="ocf-value ocf-checkbox"
-                                                                        data-filter-key="1.0" data-value-id="60">
-                                                                    <span class="ocf-value-input ocf-value-input-checkbox"></span>
-                                                                    <span class="ocf-value-name">Huawei</span> <span
-                                                                        class="ocf-value-append"> <span
-                                                                        class="ocf-value-count">2</span> </span>
-                                                                </button>
-                                                                <button type="button" id="ocf-v-1-0-64-1"
-                                                                        class="ocf-value ocf-checkbox"
-                                                                        data-filter-key="1.0" data-value-id="64">
-                                                                    <span class="ocf-value-input ocf-value-input-checkbox"></span>
-                                                                    <span class="ocf-value-name">Lenovo</span> <span
-                                                                        class="ocf-value-append"> <span
-                                                                        class="ocf-value-count">49</span> </span>
-                                                                </button>
-                                                                <button type="button" id="ocf-v-1-0-82-1"
-                                                                        class="ocf-value ocf-checkbox"
-                                                                        data-filter-key="1.0" data-value-id="82">
-                                                                    <span class="ocf-value-input ocf-value-input-checkbox"></span>
-                                                                    <span class="ocf-value-name">Dell</span> <span
-                                                                        class="ocf-value-append"> <span
-                                                                        class="ocf-value-count">48</span> </span>
-                                                                </button>
-                                                                <button type="button" id="ocf-v-1-0-83-1"
-                                                                        class="ocf-value ocf-checkbox ocf-disabled"
-                                                                        data-filter-key="1.0" data-value-id="83">
-                                                                    <span class="ocf-value-input ocf-value-input-checkbox"></span>
-                                                                    <span class="ocf-value-name">Packard Bell</span>
-                                                                    <span class="ocf-value-append"> <span
-                                                                            class="ocf-value-count">0</span> </span>
-                                                                </button>
-                                                                <button type="button" id="ocf-v-1-0-56-1"
-                                                                        class="ocf-value ocf-checkbox ocf-disabled"
-                                                                        data-filter-key="1.0" data-value-id="56">
-                                                                    <span class="ocf-value-input ocf-value-input-checkbox"></span>
-                                                                    <span class="ocf-value-name">Digma</span> <span
-                                                                        class="ocf-value-append"> <span
-                                                                        class="ocf-value-count">0</span> </span>
-                                                                </button>
-                                                                <button type="button" id="ocf-v-1-0-191-1"
-                                                                        class="ocf-value ocf-checkbox ocf-disabled"
-                                                                        data-filter-key="1.0" data-value-id="191">
-                                                                    <span class="ocf-value-input ocf-value-input-checkbox"></span>
-                                                                    <span class="ocf-value-name">Haier</span> <span
-                                                                        class="ocf-value-append"> <span
-                                                                        class="ocf-value-count">0</span> </span>
-                                                                </button>
-                                                                <button type="button" id="ocf-v-1-0-81-1"
-                                                                        class="ocf-value ocf-checkbox"
-                                                                        data-filter-key="1.0" data-value-id="81">
-                                                                    <span class="ocf-value-input ocf-value-input-checkbox"></span>
-                                                                    <span class="ocf-value-name">HP </span> <span
-                                                                        class="ocf-value-append"> <span
-                                                                        class="ocf-value-count">4</span> </span>
-                                                                </button>
-                                                                <button type="button" id="ocf-v-1-0-11-1"
-                                                                        class="ocf-value ocf-checkbox ocf-disabled"
-                                                                        data-filter-key="1.0" data-value-id="11">
-                                                                    <span class="ocf-value-input ocf-value-input-checkbox"></span>
-                                                                    <span class="ocf-value-name">Prestigio</span>
-                                                                    <span class="ocf-value-append"> <span
-                                                                            class="ocf-value-count">0</span> </span>
-                                                                </button>
-                                                                <button type="button" id="ocf-v-1-0-197-1"
-                                                                        class="ocf-value ocf-checkbox ocf-disabled"
-                                                                        data-filter-key="1.0" data-value-id="197">
-                                                                    <span class="ocf-value-input ocf-value-input-checkbox"></span>
-                                                                    <span class="ocf-value-name">Fujitsu</span>
-                                                                    <span class="ocf-value-append"> <span
-                                                                            class="ocf-value-count">0</span> </span>
-                                                                </button>
-                                                                <button type="button" id="ocf-v-1-0-190-1"
-                                                                        class="ocf-value ocf-checkbox ocf-disabled"
-                                                                        data-filter-key="1.0" data-value-id="190">
-                                                                    <span class="ocf-value-input ocf-value-input-checkbox"></span>
-                                                                    <span class="ocf-value-name">DEXP</span> <span
-                                                                        class="ocf-value-append"> <span
-                                                                        class="ocf-value-count">0</span> </span>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                                <button type="button"
-                                                        class="ocf-btn ocf-btn-link ocf-btn-show-values"
-                                                        data-ocf="collapse" data-target="#ocf-hidden-values-1-0-1"
-                                                        data-loading-text="<i class='fa fa-refresh fa-spin'></i> Загрузка.."
-                                                        aria-expanded="false">
-                                                        <span class="ocf-hide-expand-1">Показать еще 13 <i
-                                                                class="ocf-icon ocf-angle ocf-angle-down"></i></span>
-                                                    <span class="ocf-hide-expand-0">Скрыть <i
-                                                            class="ocf-icon ocf-angle ocf-angle-up"></i></span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="ocf-filter" id="ocf-filter-5-0-1">
-                                        <div class="ocf-filter-body">
-                                            <div class="ocf-filter-header" data-ocf="expand">
-                                                <i class="ocf-mobile ocf-icon ocf-arrow-long ocf-arrow-left"></i>
-
-                                                <span class="ocf-active-label"></span>
-
-
-                                                <span class="ocf-filter-name">Новинка</span>
-
-                                                <span class="ocf-filter-header-append">
-
-
-        <span class="ocf-filter-discard ocf-icon ocf-icon-16 ocf-minus-circle" data-ocf-discard="5.0"></span>
-
-        <i class="ocf-mobile ocf-icon ocf-angle ocf-angle-right"></i>
-
-      </span>
-                                            </div><!-- /.ocf-filter-header -->
-
-
-                                            <div class="ocf-value-list">
-
-                                                <div class="ocf-value-list-body">
-
-                                                    <button type="button" id="ocf-v-5-0-1-1"
-                                                            class="ocf-value ocf-checkbox" data-filter-key="5.0"
-                                                            data-value-id="1">
-                                                        <span class="ocf-value-input ocf-value-input-checkbox"></span>
-
-                                                        <span class="ocf-value-name">Только новые поступления</span>
-                                                        <span class="ocf-value-append">
-    <span class="ocf-value-count">4.6<span class="ocf-num-abbr">k</span></span>
-  </span>
-                                                    </button>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="ocf-filter ocf-dropdown" id="ocf-filter-10552-2-1">
-                                        <div class="ocf-filter-body">
-                                            <div class="ocf-filter-header" data-ocf="expand">
-                                                <i class="ocf-mobile ocf-icon ocf-arrow-long ocf-arrow-left"></i>
-
-                                                <span class="ocf-active-label"></span>
-
-
-                                                <span class="ocf-filter-name">Тип</span>
-
-                                                <span class="ocf-filter-header-append">
-
-
-        <span class="ocf-filter-discard ocf-icon ocf-icon-16 ocf-minus-circle" data-ocf-discard="10552.2"></span>
-
-        <i class="ocf-mobile ocf-icon ocf-angle ocf-angle-right"></i>
-
-        <i class="ocf-desktop ocf-icon ocf-angle ocf-angle-down"></i>
-
-      </span>
-                                            </div><!-- /.ocf-filter-header -->
-
-
-                                            <div class="ocf-value-list">
-                                                <div class="ocf-scroll-y">
-
-                                                    <div class="ocf-value-list-body">
-
-                                                        <button type="button" id="ocf-v-10552-2-2411505945-1"
-                                                                class="ocf-value ocf-checkbox"
-                                                                data-filter-key="10552.2"
-                                                                data-value-id="2411505945">
-                                                            <span class="ocf-value-input ocf-value-input-checkbox"></span>
-
-                                                            <span class="ocf-value-name">2-в-1</span>
-                                                            <span class="ocf-value-append">
-    <span class="ocf-value-count">254</span>
-  </span>
-                                                        </button>
-                                                        <button type="button" id="ocf-v-10552-2-2946050381-1"
-                                                                class="ocf-value ocf-checkbox"
-                                                                data-filter-key="10552.2"
-                                                                data-value-id="2946050381">
-                                                            <span class="ocf-value-input ocf-value-input-checkbox"></span>
-
-                                                            <span class="ocf-value-name">домашний</span>
-                                                            <span class="ocf-value-append">
-    <span class="ocf-value-count">58</span>
-  </span>
-                                                        </button>
-                                                        <button type="button" id="ocf-v-10552-2-759678246-1"
-                                                                class="ocf-value ocf-checkbox"
-                                                                data-filter-key="10552.2" data-value-id="759678246">
-                                                            <span class="ocf-value-input ocf-value-input-checkbox"></span>
-
-                                                            <span class="ocf-value-name">игровой</span>
-                                                            <span class="ocf-value-append">
-    <span class="ocf-value-count">2.3<span class="ocf-num-abbr">k</span></span>
-  </span>
-                                                        </button>
-                                                        <button type="button" id="ocf-v-10552-2-3623512706-1"
-                                                                class="ocf-value ocf-checkbox"
-                                                                data-filter-key="10552.2"
-                                                                data-value-id="3623512706">
-                                                            <span class="ocf-value-input ocf-value-input-checkbox"></span>
-
-                                                            <span class="ocf-value-name">имиджевый</span>
-                                                            <span class="ocf-value-append">
-    <span class="ocf-value-count">80</span>
-  </span>
-                                                        </button>
-                                                        <button type="button" id="ocf-v-10552-2-1262726248-1"
-                                                                class="ocf-value ocf-checkbox"
-                                                                data-filter-key="10552.2"
-                                                                data-value-id="1262726248">
-                                                            <span class="ocf-value-input ocf-value-input-checkbox"></span>
-
-                                                            <span class="ocf-value-name">классический</span>
-                                                            <span class="ocf-value-append">
-    <span class="ocf-value-count">3<span class="ocf-num-abbr">k</span></span>
-  </span>
-                                                        </button>
-                                                        <button type="button" id="ocf-v-10552-2-502148729-1"
-                                                                class="ocf-value ocf-checkbox"
-                                                                data-filter-key="10552.2" data-value-id="502148729">
-                                                            <span class="ocf-value-input ocf-value-input-checkbox"></span>
-
-                                                            <span class="ocf-value-name">нетбук</span>
-                                                            <span class="ocf-value-append">
-    <span class="ocf-value-count">20</span>
-  </span>
-                                                        </button>
-                                                        <button type="button" id="ocf-v-10552-2-2629205755-1"
-                                                                class="ocf-value ocf-checkbox"
-                                                                data-filter-key="10552.2"
-                                                                data-value-id="2629205755">
-                                                            <span class="ocf-value-input ocf-value-input-checkbox"></span>
-
-                                                            <span class="ocf-value-name">рабочая станция</span>
-                                                            <span class="ocf-value-append">
-    <span class="ocf-value-count">159</span>
-  </span>
-                                                        </button>
-                                                        <button type="button" id="ocf-v-10552-2-71850845-1"
-                                                                class="ocf-value ocf-checkbox"
-                                                                data-filter-key="10552.2" data-value-id="71850845">
-                                                            <span class="ocf-value-input ocf-value-input-checkbox"></span>
-
-                                                            <span class="ocf-value-name">рабочий</span>
-                                                            <span class="ocf-value-append">
-    <span class="ocf-value-count">1.3<span class="ocf-num-abbr">k</span></span>
-  </span>
-                                                        </button>
-                                                    </div>
-
-                                                    <div class="ocf-collapse ocf-collapse-value"
-                                                         id="ocf-hidden-values-10552-2-1" data-ocf-load="values"
-                                                         data-filter-key="10552.2">
-                                                    </div>
-                                                </div>
-
-
-                                                <button type="button"
-                                                        class="ocf-btn ocf-btn-link ocf-btn-show-values"
-                                                        data-ocf="collapse"
-                                                        data-target="#ocf-hidden-values-10552-2-1"
-                                                        data-loading-text="<i class='fa fa-refresh fa-spin'></i> Загрузка.."
-                                                        aria-expanded="false">
-                                                        <span class="ocf-hide-expand-1">Показать еще 5 <i
-                                                                class="ocf-icon ocf-angle ocf-angle-down"></i></span>
-                                                    <span class="ocf-hide-expand-0">Скрыть <i
-                                                            class="ocf-icon ocf-angle ocf-angle-up"></i></span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-                            <div class="ocf-footer">
-                                <div class="ocf-between">
-                                    <button type="button" data-ocf-discard="*"
-                                            class="ocf-btn ocf-btn-link ocf-disabled" disabled="disabled">Сбросить
-                                    </button>
-
-                                    <button type="button"
-                                            class="ocf-btn ocf-disabled ocf-btn-block ocf-search-btn-static"
-                                            data-ocf="button"
-                                            data-loading-text="<i class='fa fa-refresh fa-spin'></i> Загрузка.."
-                                            disabled="disabled">Выберите фильтры
-                                    </button>
-
-                                </div>
-                            </div>
-                        </div><!-- /.ocf-content -->
-
-                        <div class="ocf-is-mobile"></div>
-
-                        <div class="ocf-btn-mobile-fixed ocf-mobile">
-                            <button type="button" class="ocf-btn ocf-btn-default" data-ocf="mobile"
-                                    aria-label="Фильтр">
-                                <span class="ocf-btn-name">Фильтр</span>
-                                <i class="ocf-icon ocf-icon-16 ocf-brand ocf-sliders"></i>
-                            </button>
-                        </div>
-
-
-                        <div class="ocf-hidden">
-                            <button class="ocf-btn ocf-search-btn-popover" data-ocf="button"
-                                    data-loading-text="<i class='fa fa-refresh fa-spin'></i> Загрузка..">Выберите
-                                фильтры
-                            </button>
-                        </div>
-
-
-                    </div><!-- /.ocf-container -->  </aside>
-
             </div>
             <div class="section__center">
                 <div class="section__center-head">
                     <nav class="breadcrumbs">
                         <ul>
                             <li><a href="">Главная</a></li>
-                            <li><span>Алюминиевые системы</span></li>
+                            <li><span>Новости</span></li>
                         </ul>
 
                     </nav>
-                    <span class="title">Алюминиевые системы</span>
-                    <div class="control-line">
-                        <div class="ocf-btn-mobile-static ocf-mobile">
-                            <button type="button" class="ocf-btn ocf-btn-default" data-ocf="mobile"><span
-                                    class="ocf-btn-name">Фильтр</span> <i
-                                    class="ocf-icon ocf-icon-16 ocf-brand ocf-sliders"></i></button>
-                        </div>
-                        <div class="control-sort">
-                            <p>Сортировка:</p>
-                            <select>
-                                <option value="">по популярности</option>
-                                <option value="">по ревелантности</option>
-                                <option value="">от самых дорогих</option>
-                                <option value="">от дешевых</option>
-                            </select>
-                        </div>
-                        <div class="control-view">
-                            <div class="control-btn"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="5" width="10" height="3" />
-                                <rect x="5" y="4" width="10" height="3" />
-                                <rect x="5" y="8" width="10" height="3" />
-                                <rect width="4" height="3" />
-                                <rect y="4" width="4" height="3" />
-                                <rect y="8" width="4" height="3" />
-                            </svg>
-                            </div>
-                            <div class="control-btn active"><svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="4" height="3" />
-                                <rect x="5" width="4" height="3" />
-                                <rect x="10" width="4" height="3" />
-                                <rect y="4" width="4" height="3" />
-                                <rect x="5" y="4" width="4" height="3" />
-                                <rect x="10" y="4" width="4" height="3" />
-                                <rect y="8" width="4" height="3" />
-                                <rect x="5" y="8" width="4" height="3" />
-                                <rect x="10" y="8" width="4" height="3" />
-                            </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="cards-list cards-list--five ">
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card">
-                        <div class="card-inner">
-                                <span class="code">
-Код: 18-318423
-                                </span>
-                            <div class="img">
-                                <img class="lazyload" data-src="./img/card-img.png" alt="">
-                            </div>
-                            <a href="#" class="name">Фрикционные ножницы, для створки до 12 кг. (FFH для створки до
-                                12 кг)</a>
-                            <div class="rate">
-                                <div class="rating-stars" data-score="4.5">
-
-                                </div>
-                                <a href="#" class="comments">12</a>
-                            </div>
-                            <div class="bottom">
-                                <p class="price">
-                                    <strong>600 грн</strong>
-                                    399 грн
-                                </p>
-                                <div class="btns">
-                                    <a href="" class="fav">
-                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M10.8477 3.21967L11 3.39848L11.1523 3.21967C12.2056 1.98279 13.8206 1.2 15.5 1.2C18.4695 1.2 20.8 3.53046 20.8 6.5C20.8 8.3243 19.9814 9.99529 18.5014 11.8046C17.0196 13.6163 14.8957 15.5423 12.3175 17.8802L12.3157 17.8818L12.3154 17.8821L10.9995 19.08L9.68451 17.892L9.68408 17.8916L9.6555 17.8656C7.08951 15.5338 4.9753 13.6126 3.4986 11.8059C2.01865 9.99531 1.2 8.32431 1.2 6.5C1.2 3.53046 3.53046 1.2 6.5 1.2C8.17944 1.2 9.79445 1.98279 10.8477 3.21967ZM5.01305 11.1225C6.40248 12.7461 8.38722 14.5446 10.7621 16.6949L10.8586 16.7914L11 16.9328L11.1414 16.7914L11.2379 16.6949C13.6128 14.5446 15.5975 12.7461 16.987 11.1225C18.3752 9.50046 19.2 8.01882 19.2 6.5C19.2 4.38954 17.6105 2.8 15.5 2.8C13.9315 2.8 12.399 3.77471 11.8051 5.16H10.204C9.60133 3.77534 8.0692 2.8 6.5 2.8C4.38954 2.8 2.8 4.38954 2.8 6.5C2.8 8.01882 3.62485 9.50046 5.01305 11.1225Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                    <a href="" class="add-cart">
-                                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-
-                                            <path d="M17.4459 10.4199L17.4456 10.4204C17.1545 10.9491 16.5886 11.3 15.9437 11.3H8.80417H8.68614L8.62909 11.4033L7.57492 13.3124L7.4111 13.6091H7.75H19.05V15.1182H7.75C6.446 15.1182 5.62171 13.7259 6.24808 12.5797C6.24818 12.5795 6.24828 12.5793 6.24839 12.5792L7.5415 10.2512L7.59154 10.1611L7.54724 10.0681L4.09724 2.8231L4.04295 2.70909H3.91667H2.2V1.2H5.00698L5.85371 2.99444L5.90781 3.10909H6.03458H20.2179C20.7951 3.10909 21.156 3.72862 20.8774 4.22372L20.8767 4.22492L17.4459 10.4199ZM6.945 4.61818H6.62833L6.76441 4.90412L9.03566 9.67685L9.08993 9.79091H9.21625H15.9437H16.0616L16.1187 9.68786L18.7637 4.91513L18.9282 4.61818H18.5887H6.945ZM6.04292 18.1818C6.04292 17.2417 6.80685 16.4727 7.75 16.4727C8.69446 16.4727 9.46667 17.243 9.46667 18.1818C9.46667 19.1206 8.69446 19.8909 7.75 19.8909C6.80685 19.8909 6.04292 19.1219 6.04292 18.1818ZM15.6262 18.1818C15.6262 17.2417 16.3902 16.4727 17.3333 16.4727C18.2778 16.4727 19.05 17.243 19.05 18.1818C19.05 19.1206 18.2778 19.8909 17.3333 19.8909C16.3902 19.8909 15.6262 19.1219 15.6262 18.1818Z"
-                                                  stroke-width="0.4"/>
-
-
-                                        </svg>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+                    <span class="title">Новости</span>
 
                 </div>
-                <div class="more-items">
-                    <a href="javascript:void()">Показать еще 20 товаров</a>
+                <div class="news-sort">
+                    <a href="" class="active">все</a>
+                    <a href="">блог</a>
+                    <a href="">акции</a>
+                    <a href="">новинки</a>
+                    <a href="">события</a>
+                </div>
+
+                <div class="news-list news-list--news">
+                    <a href="" class="single-news">
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ns-1.png" alt="">
+                        </div>
+                        <div class="tags">
+                            <p>БЛОГ</p>
+                            <p>акции</p>
+                        </div>
+                        <div class="text">
+                            <span>16 марта 2022</span>
+                            <p>Раздвижные системы Масо</p>
+
+                        </div>
+                    </a>
+                    <a href="" class="single-news">
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ns-2.png" alt="">
+                        </div>
+                        <div class="tags">
+                            <p>новинки</p>
+                        </div>
+                        <div class="text">
+                            <span>16 марта 2022</span>
+                            <p>Дверные замки Масо</p>
+
+                        </div>
+                    </a>
+                    <a href="" class="single-news">
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ns-3.png" alt="">
+                        </div>
+                        <div class="tags">
+                            <p>блог</p>
+                        </div>
+                        <div class="text">
+                            <span>16 марта 2022</span>
+                            <p>Защита дома от взлома!</p>
+
+                        </div>
+                    </a>
+                    <a href="" class="single-news">
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ns-1.png" alt="">
+                        </div>
+                        <div class="tags">
+                            <p>БЛОГ</p>
+                            <p>акции</p>
+                        </div>
+                        <div class="text">
+                            <span>16 марта 2022</span>
+                            <p>Раздвижные системы Масо</p>
+
+                        </div>
+                    </a>
+                    <a href="" class="single-news">
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ns-2.png" alt="">
+                        </div>
+                        <div class="tags">
+                            <p>новинки</p>
+                        </div>
+                        <div class="text">
+                            <span>16 марта 2022</span>
+                            <p>Дверные замки Масо</p>
+
+                        </div>
+                    </a>
+                    <a href="" class="single-news">
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ns-3.png" alt="">
+                        </div>
+                        <div class="tags">
+                            <p>блог</p>
+                        </div>
+                        <div class="text">
+                            <span>16 марта 2022</span>
+                            <p>Защита дома от взлома!</p>
+
+                        </div>
+                    </a>
+                    <a href="" class="single-news">
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ns-1.png" alt="">
+                        </div>
+                        <div class="tags">
+                            <p>БЛОГ</p>
+                            <p>акции</p>
+                        </div>
+                        <div class="text">
+                            <span>16 марта 2022</span>
+                            <p>Раздвижные системы Масо</p>
+
+                        </div>
+                    </a>
+                    <a href="" class="single-news">
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ns-2.png" alt="">
+                        </div>
+                        <div class="tags">
+                            <p>новинки</p>
+                        </div>
+                        <div class="text">
+                            <span>16 марта 2022</span>
+                            <p>Дверные замки Масо</p>
+
+                        </div>
+                    </a>
+                    <a href="" class="single-news">
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ns-3.png" alt="">
+                        </div>
+                        <div class="tags">
+                            <p>блог</p>
+                        </div>
+                        <div class="text">
+                            <span>16 марта 2022</span>
+                            <p>Защита дома от взлома!</p>
+
+                        </div>
+                    </a>
+                    <a href="" class="single-news">
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ns-1.png" alt="">
+                        </div>
+                        <div class="tags">
+                            <p>БЛОГ</p>
+                            <p>акции</p>
+                        </div>
+                        <div class="text">
+                            <span>16 марта 2022</span>
+                            <p>Раздвижные системы Масо</p>
+
+                        </div>
+                    </a>
+                    <a href="" class="single-news">
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ns-2.png" alt="">
+                        </div>
+                        <div class="tags">
+                            <p>новинки</p>
+                        </div>
+                        <div class="text">
+                            <span>16 марта 2022</span>
+                            <p>Дверные замки Масо</p>
+
+                        </div>
+                    </a>
+                    <a href="" class="single-news">
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ns-3.png" alt="">
+                        </div>
+                        <div class="tags">
+                            <p>блог</p>
+                        </div>
+                        <div class="text">
+                            <span>16 марта 2022</span>
+                            <p>Защита дома от взлома!</p>
+
+                        </div>
+                    </a>
+                    <a href="" class="single-news">
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ns-1.png" alt="">
+                        </div>
+                        <div class="tags">
+                            <p>БЛОГ</p>
+                            <p>акции</p>
+                        </div>
+                        <div class="text">
+                            <span>16 марта 2022</span>
+                            <p>Раздвижные системы Масо</p>
+
+                        </div>
+                    </a>
+                    <a href="" class="single-news">
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ns-2.png" alt="">
+                        </div>
+                        <div class="tags">
+                            <p>новинки</p>
+                        </div>
+                        <div class="text">
+                            <span>16 марта 2022</span>
+                            <p>Дверные замки Масо</p>
+
+                        </div>
+                    </a>
+                    <a href="" class="single-news">
+                        <div class="img">
+                            <img class="lazyload" data-src="./img/ns-3.png" alt="">
+                        </div>
+                        <div class="tags">
+                            <p>блог</p>
+                        </div>
+                        <div class="text">
+                            <span>16 марта 2022</span>
+                            <p>Защита дома от взлома!</p>
+
+                        </div>
+                    </a>
                 </div>
                 <div class="pagination">
                     <ul>
@@ -1950,110 +566,7 @@
         </div>
     </div>
 
-    <section class="seo-section">
-        <div class="container">
-            <div class="seo-block">
-                <h1>Фурнитурка (h2)</h1>
-                <p>Компания «Фурнитурка» - официальный представитель ведущих европейских производителей фурнитуры в
-                    Украине. Многолетний опыт работы с лучшими поставщиками Европы и СНГ зарекомендовали компанию, как
-                    лидера рынка, предлагающего исключительно качественные комплектующие.
-                </p>
-                <p>
-                    Уникальная безпетлевая система, которая легко позволяет открывать окна снизу вверх. Установка очень
-                    простая, инструкцию предоставили при покупке. Уже решили разместить данный образец у себя в офисе.
-                    За
-                    эти годы Аркада-Пласт стала лидером на рынке Украины по продажам нестандартных, оригинальных и
-                    эксклюзивных комплектующих высокого качества.
-                </p>
-                <p>
-                    В настоящее время мы выводим на рынок Украины новые разработки известных европейских брендов,
-                    которые,
-                    мы уверены, заинтересуют отечественных производителей оконных и дверных конструкций, стремящихся
-                    повысить технологичность своего производства и оснастить свои конструкции механизмами и элементами,
-                    отвечающими современным требованиям комфорта и безопасности.
-                </p>
 
-                <h2>О компании (h3)</h2>
-                <p>
-                    Компания «Фурнитурка» - официальный представитель ведущих европейских производителей фурнитуры в
-                    Украине. Многолетний опыт работы с лучшими поставщиками Европы и СНГ зарекомендовали компанию, как
-                    лидера рынка, предлагающего исключительно качественные комплектующие.
-                </p>
-                <p><a href="">Уникальная безпетлевая система</a>, которая легко позволяет открывать окна снизу вверх.
-                    Установка очень
-                    простая, инструкцию предоставили при покупке. Уже решили разместить данный образец у себя в офисе.
-                    За
-                    эти годы Аркада-Пласт стала лидером на рынке Украины по продажам нестандартных, оригинальных и
-                    эксклюзивных комплектующих высокого качества.</p>
-
-                <p>В настоящее время мы выводим на рынок Украины новые разработки известных европейских брендов,
-                    которые,
-                    мы уверены, заинтересуют отечественных производителей оконных и дверных конструкций, стремящихся
-                    повысить технологичность своего производства и оснастить свои конструкции механизмами и элементами,
-                    отвечающими современным требованиям комфорта и безопасности.</p>
-
-
-                <h4>О компании (h4)</h4>
-                <ol>
-                    <li><b>Террасные двери или раздвижные конструкции первого этажа</b>
-
-                        Террасные двери или раздвижные конструкции первого этажа согласно
-                        статистике становятся объектом взлома в 41% случаев.
-                        Средства механической защиты: взломостойкая фурнитура MACO MULTI для поворотных и
-                        поворотно-откидных
-                        окон и балконных дверей, подъемно-сдвижная фурнитура MACO RAIL-SYSTEMS для подъемно-сдвижных
-                        конструкций
-                    </li>
-                    <li><b>Окна первого этажа</b>
-
-                        <p> Почти 30% несанкционированных вторжений в дома происходят через окна
-                            первого этажа. Именно их выбирают злоумышленники, чтобы попасть в чужое
-                            жилище. Средства механической защиты: взломостойкая фурнитура MACO MULTI для поворотных и
-                            поворотно-откидных окон и балконных дверей</li>
-
-                    <li><b>Входные двери</b>
-
-                        Входные двери в большинстве случаев хорошо просматриваются. Поэтому 12% взломов происходят через
-                        эти,
-                        часто «гостеприимные», ворота.
-                        Средства механической защиты: дверные замки MACO PROTECT
-                    </li>
-
-                </ol>
-
-                <span>Для безопасности гаража производители предлагают различные системы защиты:
-</span>
-                <ul>
-                    <li>
-                        Противовзломная фурнитура для окон
-                    </li>
-
-                    <li>Противовзломная фурнитура для дверей</li>
-                </ul>
-                <p>
-                    Компания «Фурнитурка» - официальный представитель ведущих европейских производителей фурнитуры в
-                    Украине. Многолетний опыт работы с лучшими поставщиками Европы и СНГ зарекомендовали компанию, как
-                    лидера рынка, предлагающего исключительно качественные комплектующие.
-                </p>
-                <p>
-                    Уникальная безпетлевая система, которая легко позволяет открывать окна снизу вверх. Установка очень
-                    простая, инструкцию предоставили при покупке. Уже решили разместить данный образец у себя в офисе.
-                    За
-                    эти годы Аркада-Пласт стала лидером на рынке Украины по продажам нестандартных, оригинальных и
-                    эксклюзивных комплектующих высокого качества.</p>
-                <p>
-
-                    В настоящее время мы выводим на рынок Украины новые разработки известных европейских брендов,
-                    которые,
-                    мы уверены, заинтересуют отечественных производителей оконных и дверных конструкций, стремящихся
-                    повысить технологичность своего производства и оснастить свои конструкции механизмами и элементами,
-                    отвечающими современным требованиям комфорта и безопасности.</p>
-                <p>
-
-            </div>
-            <div class="show-seo" data-hidden="Еще" data-show="Скрыть">Еще</div>
-        </div>
-    </section>
 
 
 </main>
