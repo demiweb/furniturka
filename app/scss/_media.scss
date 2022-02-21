@@ -1,4 +1,18 @@
 @media screen and (max-width: 1440px) {
+  .article-content .align-right {
+    margin-left: 25px;
+    margin-bottom: 25px;
+    max-width: 50%;
+  }
+  .article-content .align-left {
+    margin-right: 25px;
+    margin-bottom: 25px;
+    max-width: 50%;
+  }
+  .article-content img{
+    width: 100% !important;
+    height: auto;
+  }
   .checkout-footer {
     padding: 29px 30px;
   }
@@ -84,6 +98,76 @@
 }
 
 @media screen and (max-width: 1300px) {
+  .delivery-info {
+    padding: 25px;
+    margin-bottom: 50px;
+    gap: 20px;
+    .right, .left {
+      width: calc(50% - 10px);
+    }
+    .right {
+      padding-right: 0;
+      p {
+        font-size: 14px;
+        line-height: 1.2;
+        padding: 15px;
+      }
+      span {
+        font-size: 14px;
+        line-height: 1.2;
+      }
+    }
+    .left {
+      .btn {
+        padding: 4px 10px;
+        height: 40px;
+      }
+      > p {
+        font-size: 16px;
+        line-height: 1.2;
+      }
+      span {
+        font-size: 14px;
+        line-height: 1.2;
+      }
+      .text {
+        p {
+          font-size: 14px;
+          line-height: 1.2;
+          padding: 6px 10px;
+        }
+      }
+    }
+  }
+  .delivery-pay .img {
+    width: 40%;
+  }
+  .delivery-pay .text {
+    p {
+      font-size: 24px;
+      line-height: 1.2;
+    }
+    span {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+  }
+  .delivery-head {
+    min-height: 460px;
+  }
+  .delivery-head {
+    padding: 25px;
+  }
+  .delivery-head .text {
+    max-width: 430px;
+  }
+  .delivery-head .text span {
+    font-size: 17px;
+    line-height: 1.2;
+  }
+  .delivery-head .text p strong {
+    font-size: 14px;
+  }
   .orders-item__line .item {
     &:nth-child(1) {
       width: 18%;
@@ -148,6 +232,25 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+  .article-content * {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .article-content h2 {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  .article-content h3 {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  .article-content h4 {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
 }
 .header-catalog__nav > ul > li ul {
   bottom: 0;
@@ -159,6 +262,17 @@
   }
 }
 @media screen and (max-width: 1220px) {
+  .news-top-banner {
+    padding: 25px;
+    height: 270px;
+  }
+  .article-content iframe {
+    margin: 25px 0;
+  }
+  .news-top-banner .center h1, .news-top-banner .center h2 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
   .news-sort {
     width: calc(100% - 15px);
     margin-left: 15px;
@@ -432,6 +546,19 @@
 }
 
 @media screen and (max-width: 1050px) {
+  .delivery-head .text {
+    max-width: 405px;
+  }
+  .article-content .align-right {
+    margin-left: 25px;
+    margin-bottom: 25px;
+    max-width: 40%;
+  }
+  .article-content .align-left {
+    margin-right: 25px;
+    margin-bottom: 25px;
+    max-width: 40%;
+  }
   .review-text {
     padding-top: 10px;
     padding-bottom: 25px;
@@ -758,6 +885,64 @@
   }
 }
 @media screen and (max-width: 992px) {
+  .delivery-info {
+    padding: 15px;
+    margin-bottom: 40px;
+    gap: 16px;
+    .right, .left {
+      width: calc(50% - 8px);
+    }
+    .right {
+      padding-right: 0;
+      p {
+        font-size: 14px;
+        line-height: 1.2;
+        padding: 15px;
+      }
+      span {
+        font-size: 12px;
+        line-height: 1.2;
+      }
+    }
+    .left {
+      .btn {
+        padding: 4px 10px;
+        height: 40px;
+      }
+      > p {
+        font-size: 14px;
+        line-height: 1.2;
+      }
+      span {
+        font-size: 12px;
+        line-height: 1.2;
+      }
+      .text {
+        p {
+          font-size: 12px;
+          line-height: 1.2;
+          padding: 6px 10px;
+        }
+      }
+    }
+  }
+  .delivery-head .text {
+    margin-bottom: 0;
+  }
+  .delivery-head {
+    min-height: 390px;
+  }
+  .delivery-container {
+    padding-left: 0;
+    margin-top: 15px;
+  }
+  .section__center {
+    width: 100%;
+  }
+  .news-container {
+    padding-left: 0;
+    margin-top: 20px;
+  }
   .news-sort {
     width: 100%;
     margin-left: 0;
@@ -1349,6 +1534,50 @@
 }
 
 @media screen and (max-width: 700px) {
+  .delivery-pay {
+    margin: 15px 0;
+    padding: 15px;
+    .text {
+      p {
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
+      span {
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .delivery-head {
+    background: #FAFAFA;
+    min-height: 0;
+    .title {
+      text-align: left;
+    }
+    .text {
+      max-width: none;
+      margin-top: 30px;
+      width: 100%;
+    }
+  }
+  .article-content iframe {
+    width: 100% !important;
+    height: 320px !important;
+  }
+  .news-top-banner .center h1, .news-top-banner .center h2 {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+  .article-content ol > li b {
+    display: block;
+    margin-bottom: 6px !important;
+  }
+  .news-top-banner {
+    height: 200px;
+  }
+  .article-content {
+    margin: 40px 0;
+  }
   .checkout-footer__total {
     width: 100%;
 
@@ -1456,8 +1685,31 @@
   outline: none !important;
 }
 @media screen and (max-width: 600px) {
+  .delivery-info {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .left, .right {
+      width: 100%;
+    }
+  }
+  .delivery-head .text span {
+    font-size: 14px;
+    line-height: 1.2;
+  }
   .section-brands {
     padding: 15px 10px;
+  }
+  .delivery-head .text {
+    margin-top: 15px;
+  }
+  .delivery-head .text p {
+    font-size: 12px;
+    line-height: 1.2;
+    strong {
+      font-size: 12px;
+      line-height: 1.2;
+    }
   }
   .section__center.section__center--ml .section__center-head {
     padding: 0 10px !important;
@@ -1851,6 +2103,16 @@
 }
 
 @media screen and (max-width: 500px) {
+  .article-content iframe {
+    width: 100% !important;
+    height: 190px !important;
+  }
+  .article-content ol > li {
+    margin-bottom: 12px;
+  }
+  .article-content h2 {
+    font-size: 16px;
+  }
   .char .line span {
     max-width: 110px;
   }
@@ -2009,8 +2271,34 @@
     }
   }
 }
-
+@media screen and (max-width: 450px) {
+  .delivery-info .left .text {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      border-left: none;
+      border-bottom: 2px solid $red;
+      margin-bottom: 12px;
+    }
+  }
+  .delivery-pay {
+    flex-direction: column-reverse;
+    align-items: center;
+    .img {
+      width: 50%;
+      margin-right: 0;
+      margin-top: 5px;
+    }
+    .text {
+      padding-right: 0;
+    }
+  }
+}
 @media screen and (max-width: 400px) {
+  .delivery-pay {
+
+  }
   .news-sort {
     flex-wrap: wrap;
     a {
