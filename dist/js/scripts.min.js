@@ -311,6 +311,56 @@ openLinkCat();
 
 //sliders
 
+//added cart slider
+
+let addedSlides = [...document.querySelectorAll('.added-slider')];
+
+function addedCartSlider() {
+    if (!addedSlides.length) {
+
+    } else {
+        addedSlides.forEach((sld) => {
+            let sldCont = sld.querySelector('.added-related');
+            let sldNext = sld.querySelector('.btn-slides--next');
+            let sldPrev = sld.querySelector('.btn-slides--prev');
+            const swiper2 = new Swiper(sldCont, {
+                // Optional parameters
+                loop: false,
+                slidesPerView: 2,
+                slidesPerGroup: 1,
+                speed: 600,
+                spaceBetween: 0,
+                navigation: {
+                    nextEl: sldNext,
+                    prevEl: sldPrev,
+                },
+
+                autoplay: {
+                    delay: 3800,
+                    pauseOnMouseEnter: true,
+                },
+                breakpoints: {
+                    // when window width is >= 320px
+
+                    // when window width is >= 480px
+
+                    600: {
+                        spaceBetween: 0,
+                        slidesPerView: 2,
+                        slidesPerGroup: 1,
+                    }
+                }
+
+
+            });
+        })
+    }
+}
+
+addedCartSlider();
+
+//added cart slider
+
 
 let homeSld = [...document.querySelectorAll('.js-slider.cat-hero')];
 
@@ -442,6 +492,20 @@ function preventSingleCard() {
                     e.stopPropagation();
                     e.preventDefault();
                     fav.classList.toggle('active');
+                    if (document.querySelector('.modal-fav')) {
+                        document.querySelector('.modal-fav').classList.add('active');
+                        if (document.querySelector('.modal-fav').classList.contains('active')) {
+                            clearTimeout(timeoutHandle2);
+                            timeoutHandle2 = setTimeout(() => {
+                                document.querySelector('.modal-fav').classList.remove('active');
+                            }, 5000);
+                        } else {
+                            timeoutHandle2 = setTimeout(() => {
+                                document.querySelector('.modal-fav').classList.remove('active');
+                            }, 5000);
+                        }
+
+                    }
                 });
                 cart.addEventListener('click', (e) => {
                     e.stopPropagation();
@@ -545,11 +609,12 @@ function startPhotosSlider2() {
                 spaceBetween: 7,
                 slidesPerView: 3,
                 freeMode: false,
-                watchSlidesProgress: true,
+                watchSlidesProgress: false,
                 direction: 'vertical',
                 centeredSlides: false,
+                allowTouchMove: false,
                 loop: false,
-                draggable: true,
+                draggable: false,
                 breakpoints: {
                     // when window width is >= 320px
 
@@ -649,7 +714,7 @@ function openQuestMod() {
 }
 openQuestMod();
 
-let cartWin = [...document.querySelectorAll('.header-cart a')];
+let cartWin = [...document.querySelectorAll('.header-cart')];
 
 function openCart() {
     if (cartWin.length) {
@@ -954,7 +1019,30 @@ function goToRevs() {
     }
 }
 goToRevs();
+$(".comments").click(function() {
+    $('.item-link.reviews').click();
+});
 
+//click catalog in menu
+
+let ctlBtn2 = [...document.querySelectorAll('.header-menu .catalog-mob__btn')];
+
+function clickCtlBtn() {
+    if (ctlBtn2.length) {
+        ctlBtn2.forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                if (document.querySelector('main .catalog__block .catalog-mob__btn')) {
+                    document.querySelector('main .catalog__block .catalog-mob__btn').click();
+                    document.querySelector('.header-catalog__btn').click();
+                }
+
+            })
+        })
+    }
+}
+clickCtlBtn();
 
 //scroll item page
 let btnGoItems = [...document.querySelectorAll('.item-link')];
@@ -971,3 +1059,158 @@ function goToItemsSides() {
     }
 }
 goToItemsSides();
+
+//tabs info
+let tabsBtnInfo = [...document.querySelectorAll('.info-page__head .news-sort a')];
+let tabsTabInfo = [...document.querySelectorAll('.info-page__tabs .single-tab')];
+
+function changeTabInfo() {
+    if(tabsBtnInfo.length) {
+        tabsBtnInfo.forEach((btn, k) => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (btn.classList.contains('active')) {
+
+                } else {
+                    document.querySelector('.info-page__head .news-sort a.active').classList.remove('active');
+                    btn.classList.add('active');
+
+                    document.querySelector('.info-page__tabs .single-tab.active').classList.remove('active');
+                    tabsTabInfo.forEach((tab, l) => {
+                        if (l === k) {
+                            tab.classList.add('active');
+                        }
+                    })
+                }
+            })
+        })
+    }
+}
+changeTabInfo();
+
+
+//map mag
+function mapWorkOrNot() {
+    if (document.querySelector('.map-container')) {
+
+        let allMapsDots = [...document.querySelectorAll('.single-location > p')];
+        let addressCoord = [];
+        function goToDotMap() {
+            allMapsDots = [...document.querySelectorAll('.single-location')];
+            allMapsDots.forEach((ot) => {
+                let aLinkMap = ot.querySelector('.single-location > p');
+                aLinkMap.addEventListener('click', (e) => {
+                    // if (window.innerWidth > 640) {
+                    e.preventDefault();
+                    // }
+                    document.getElementById("mapid").scrollIntoView();
+
+                    let xCoord1 = Number(ot.dataset.locationX);
+                    let yCoord1 = Number(ot.dataset.locationY);
+                    map.setView([xCoord1, yCoord1], 18);
+                    map.panTo(new L.LatLng(xCoord1, yCoord1));
+                    markersPos[i].openPopup();
+                })
+            })
+        }
+
+        function ifHaveDots(x='50.286891509018174' ,y='27.248665812032257',zoom=7) {
+            if (!allMapsDots.length) {
+
+            } else {
+                addressCoord = [];
+
+                addressCoord=addressCoord2;
+                console.log(addressCoord);
+                createMapBuy(x,y,zoom);
+            }
+        }
+        let changeItems = document.querySelector('.select-buy__container');
+        function ifChangedItemsConsist() {
+            if (!changeItems) {
+
+            } else {
+                changeItems.onchange =  function()  {
+                    console.log('changed');
+                    ifHaveDots();
+                    goToDotMap();
+                }
+                changeItems.addEventListener('change', () => {
+                    console.log('changed');
+                    ifHaveDots();
+                    goToDotMap();
+                });
+            }
+        }
+        ifChangedItemsConsist();
+
+
+        let numberOfChanges = 0;
+
+        ifHaveDots();
+
+        function createMapBuy(x,y,zoom) {
+            function createNewMap() {
+                let divMap = document.createElement('div');
+                divMap.id = 'mapid';
+                document.querySelector('.map-container').appendChild(divMap);
+            }
+            // console.log(addressCoord);
+            let mapDiv = document.querySelector('#mapid');
+
+            if (!mapDiv) {
+                createNewMap();
+            } else {
+                mapDiv.remove();
+                createNewMap();
+            }
+
+            var tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 18,
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Points &copy 2012 LINZ'
+                }),
+
+                latlng = L.latLng(x,y );
+
+            var map = L.map('mapid', {center: latlng, zoom: zoom, layers: [tiles]});
+
+            var markers = L.markerClusterGroup();
+            let markersPos = [];
+
+            for (var i = 0; i < addressCoord.length; i++) {
+                var a = addressCoord[i];
+                var title = a[2];
+                var marker = L.marker(new L.LatLng(a[0], a[1]), { title: title });
+                marker.bindPopup(title);
+                markers.addLayer(marker);
+                markersPos.push(marker);
+            }
+
+            map.addLayer(markers);
+            allMapsDots = [...document.querySelectorAll('.single-location')];
+            allMapsDots.forEach((ot, i) => {
+                let aLinkMap = ot.querySelector('.single-location > p');
+                aLinkMap.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    $('html,body').animate({ scrollTop: $('#mapid').offset().top - 100 }, 600);
+
+
+
+                    // let idMap = document.getElementById('mapid').getBoundingClientRect().top;
+
+
+                    // e.preventDefault();
+                    let xCoord1 = Number(ot.dataset.locationX);
+                    let yCoord1 = Number(ot.dataset.locationY);
+
+                    map.setView([xCoord1, yCoord1], 18);
+                    map.panTo(new L.LatLng(xCoord1, yCoord1));
+                    markersPos[i].openPopup();
+                })
+            })
+        }
+    }
+}
+mapWorkOrNot();
+
+//map mag

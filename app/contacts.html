@@ -9,6 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap"
           rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
     <link rel="stylesheet" media="all" href="./libs/swiper.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -344,10 +354,84 @@
                     </div>
                     <div class="contacts-content">
                         <div class="contacts-location">
-                            <div class="single-location">
+                            <div class="single-location" data-location-x="50.39674462958311" data-location-y="30.49170831177046">
+                                <div class="center">
+                                    <div class="img">
+                                        <img class="lazyload" data-src="./img/city-1.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <span>Киев</span>
+                                        <strong>ул.Казацкая, 122 </strong>
+                                        <p>044-501-67-72</p>
+                                        <p>050-331-60-05</p>
+                                        <a href="">furniturag@arkadaplast.com.ua</a>
+                                        <p>График работы: <br>
+                                            Пн-Пт (9:00-17:00) <br>
+                                            Перерыв (12:00 - 13:00)</p>
+                                    </div>
+
+                                </div>
+                                <p>Посмотреть на карте</p>
+
+                            </div>
+                            <div data-location-x="49.84582175631457" data-location-y="24.006518898258744" class="single-location">
+                                <div class="center">
+                                    <div class="img">
+                                        <img class="lazyload" data-src="./img/city-2.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <span>Львов</span>
+                                        <strong>ул.Шевченка, 31 офис 213 </strong>
+                                        <p>032-232-52-54 тел/факс</p>
+                                        <p>066-792-80-91</p>
+                                        <a href="">arkadalviv@gmail.com</a>
+                                        <p>График работы: <br>
+                                            Пн-Пт (9:00-17:00) <br>
+                                            Перерыв (12:00 - 13:00)</p>
+                                    </div>
+
+                                </div>
+                                <p>Посмотреть на карте</p>
+
+                            </div>
+                            <div data-location-x="50.601028675106214" data-location-y="26.279381069449926" class="single-location">
+                                <div class="center">
+                                    <div class="img">
+                                        <img class="lazyload" data-src="./img/city-3.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <span>Ровно</span>
+                                        <strong>ул.Курчатова, 18-Ж</strong>
+                                        <p>0362-64-44-53 тел/факс</p>
+                                        <p>050-412-94-98</p>
+                                        <a href="">rivnearkada@gmail.com</a>
+                                        <p>График работы: <br>
+                                            Пн-Пт (9:00-17:00) <br>
+                                            Перерыв (12:00 - 13:00)</p>
+                                    </div>
+
+                                </div>
+                                <p>Посмотреть на карте</p>
 
                             </div>
 
+                        </div>
+
+                        <div class="map">
+                            <script>
+                                // var ajaxurl = 'https://mario.ua/wp-admin/admin-ajax.php';
+                                addressCoord2=[];
+
+
+                                addressCoord2.push([50.39674462958311, 30.49170831177046, "<strong>Козацька 122</strong><br>044-501-67-72 <br>050-331-60-05"]);
+                                addressCoord2.push([49.84582175631457, 24.006518898258744, "<strong>Козацька 122</strong><br>044-501-67-72 <br>050-331-60-05"]);
+                                addressCoord2.push([50.601028675106214, 26.279381069449926, "<strong>Козацька 122</strong><br>044-501-67-72 <br>050-331-60-05"]);
+
+
+                            </script>
+                                <div class="map-container">
+
+                            </div>
                         </div>
                     </div>
                 </div>

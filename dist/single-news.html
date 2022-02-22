@@ -85,12 +85,13 @@
 
                             </svg>
                         </a>
-                        <a href="" class="header-fav">
+                        <a href="" class="header-fav not-empty">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                                 <path d="M9.84773 3.21967L10 3.39848L10.1523 3.21967C11.2056 1.98279 12.8206 1.2 14.5 1.2C17.4695 1.2 19.8 3.53046 19.8 6.5C19.8 8.3243 18.9814 9.99529 17.5014 11.8046C16.0196 13.6163 13.8957 15.5423 11.3175 17.8802L11.3157 17.8818L11.3154 17.8821L9.99949 19.08L8.68451 17.892L8.68408 17.8916L8.6555 17.8656C6.08951 15.5338 3.9753 13.6126 2.4986 11.8059C1.01865 9.99531 0.2 8.32431 0.2 6.5C0.2 3.53046 2.53046 1.2 5.5 1.2C7.17944 1.2 8.79445 1.98279 9.84773 3.21967ZM4.01305 11.1225C5.40248 12.7461 7.38722 14.5446 9.76209 16.6949L9.85858 16.7914L10 16.9328L10.1414 16.7914L10.2379 16.6949C12.6128 14.5446 14.5975 12.7461 15.987 11.1225C17.3752 9.50046 18.2 8.01882 18.2 6.5C18.2 4.38954 16.6105 2.8 14.5 2.8C12.9315 2.8 11.399 3.77471 10.8051 5.16H9.204C8.60133 3.77534 7.0692 2.8 5.5 2.8C3.38954 2.8 1.8 4.38954 1.8 6.5C1.8 8.01882 2.62485 9.50046 4.01305 11.1225Z"
                                        stroke="#333333" stroke-width="0.4"/>
                             </svg>
+                            <span>2</span>
                         </a>
                         <a href="" class="header-cart not-empty">
                             <div class="img">
@@ -115,6 +116,10 @@
                         <a href=""><img src="./img/login-ic.svg" alt="">Авторизация</a>
                     </div>
                 </div>
+                <div class="catalog__block">
+                    <div class="catalog-mob__btn btn btn--white">Каталог</div>
+                </div>
+
                 <div class="header-menu__content">
                     <ul class="pages">
                         <li><a href="">Главная</a></li>
@@ -127,8 +132,9 @@
                     </ul>
                     <div class="header-menu__control">
                         <ul>
-                            <li><a href=""><div class="img"><img src="./img/cr-m.svg" alt=""></div>Корзина<span>5</span></a></li>
-                            <li><a href=""><div class="img"><img src="./img/fv-m.svg" alt=""></div>Избранное<span>2</span></a></li>
+
+                            <li><a href="" class="header-cart"><div class="img"><img src="./img/cr-m.svg" alt=""></div>Корзина<span>5</span></a></li>
+                            <li><a href="" ><div class="img"><img src="./img/fv-m.svg" alt=""></div>Избранное<span>2</span></a></li>
                             <li><a href=""><div class="img"><img src="./img/tm-m.svg" alt=""></div>История заказов</a></li>
                         </ul>
                         <div class="header-phone">
@@ -764,7 +770,7 @@
 
 </footer>
 
-<div class="modal-added" style="display: none !important;">
+<div class="modal-added">
     <div class="container">
         <div class="added-product">
             <div class="added-head">
@@ -775,13 +781,13 @@
                 <div class="cart-table">
                     <div class="cart-line">
                         <div class="cart-i">
-                            <img src="../img/pd-1.png" alt="">
+                            <img src="../img/card-img.png" alt="">
                         </div>
                         <div class="cart-t">
-                            <span>Артикул: BO161023</span>
-                            <p>Шоколадный молочный батончик с апельсиновой начинкой TidBit</p>
+                            <span>Код: 18-318423</span>
+                            <p>Фрикционные ножницы, для створки до 12 кг. (FFH для створки до</p>
                             <p class="price">
-                                12 грн/ШТ
+                                399.14 грн
                             </p>
                         </div>
                         <div class="cart-q">
@@ -801,19 +807,105 @@
                         <div class="swiper-wrapper">
                             <a href="#" class="added-related__single swiper-slide">
                                 <div class="img">
-                                    <img src="./img/pd-1.png" alt="">
+                                    <img src="./img/card-img.png" alt="">
                                 </div>
                                 <div class="text">
-                                    <p>Набор шоколадных батончиков Snickers...</p>
+                                    <p>Фрикционные ножницы, для створки до 12 кг...</p>
                                     <span>150 грн/шт</span>
                                 </div>
                             </a>
                             <a href="#" class="added-related__single swiper-slide">
                                 <div class="img">
-                                    <img src="./img/pd-1.png" alt="">
+                                    <img src="./img/card-img.png" alt="">
                                 </div>
                                 <div class="text">
-                                    <p>Набор шоколадных батончиков Snickers...</p>
+                                    <p>Фрикционные ножницы, для створки до 12 кг...</p>
+                                    <span>150 грн/шт</span>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="slide-btns">
+                        <div class="btn-slides btn-slides--prev">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+
+                                <path d="M9.70703 1.41502L5.12205 6L9.70703 10.585L8.29206 12L2.29206 6L8.29206 8.91824e-07L9.70703 1.41502Z"
+                                />
+
+
+                            </svg>
+                        </div>
+                        <div class="btn-slides btn-slides--next">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+
+                                <path d="M9.70703 1.41502L5.12205 6L9.70703 10.585L8.29206 12L2.29206 6L8.29206 8.91824e-07L9.70703 1.41502Z"
+                                />
+
+
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal-fav">
+    <div class="container">
+        <div class="added-product">
+            <div class="added-head">
+                <img src="" alt="">
+                <p>1 товар добавлен в <a href="">Избранное</a></p>
+            </div>
+            <div class="added-content">
+                <div class="cart-table">
+                    <div class="cart-line">
+                        <div class="cart-i">
+                            <img src="../img/card-img.png" alt="">
+                        </div>
+                        <div class="cart-t">
+                            <span>Код: 18-318423</span>
+                            <p>Фрикционные ножницы, для створки до 12 кг. (FFH для створки до</p>
+                            <p class="price">
+                                399.14 грн
+                            </p>
+                        </div>
+                        <div class="cart-q">
+                            <p>6 шт</p>
+                        </div>
+                        <div class="cart-p">
+                            <p>72 грн</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="added-footer">
+                <p>Вместе с этим товаром покупают</p>
+                <div class="added-slider">
+                    <div class="added-related swiper-container">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="added-related__single swiper-slide">
+                                <div class="img">
+                                    <img src="./img/card-img.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>Фрикционные ножницы, для створки до 12 кг...</p>
+                                    <span>150 грн/шт</span>
+                                </div>
+                            </a>
+                            <a href="#" class="added-related__single swiper-slide">
+                                <div class="img">
+                                    <img src="./img/card-img.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>Фрикционные ножницы, для створки до 12 кг...</p>
                                     <span>150 грн/шт</span>
                                 </div>
                             </a>
@@ -946,7 +1038,7 @@
                             <input type="text" placeholder="Имя">
                         </div>
                         <div class="input-cont">
-                            <input type="text" class="phone-number" placeholder="+380 (__) ___-__-__">
+                            <input type="text"  placeholder="Email">
                         </div>
                         <div class="textarea-cont">
                             <textarea placeholder="Опишите свои впечатления..." name="" id="" cols="30"
@@ -999,6 +1091,182 @@
                         </div>
                     </form>
                 </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal-window modal-window--cart ">
+    <div class="modal-backplate"></div>
+    <div class="modal-container">
+        <div class="close-modal">
+            <img src="./img/close-modal.svg" alt="">
+        </div>
+        <div class="modal-content">
+            <p class="modal-title">
+                Корзина
+            </p>
+            <div class="cart">
+                <div class="cart-table">
+                    <div class="cart-line">
+                        <div class="cart-i">
+                            <img src="../img/card-img.png" alt="">
+                        </div>
+                        <div class="cart-t">
+                            <span>Код: 18-318423</span>
+                            <p>Фрикционные ножницы, для створки до 12 кг. (FFH 200-350...</p>
+                            <p class="price">
+                                399.14 грн
+                            </p>
+                        </div>
+                        <div class="cart-q">
+                            <div class="quantity-field">
+                                <div class="quantity__button quantity__button--minus js-minus">
+                                    <button>-</button>
+                                </div>
+                                <div class="quantity">
+                                    <label for=""></label>
+                                    <input type="number" name="" value="2" data-id="402" min="0" step="1" size="1"
+                                           class="form-control js-item-count">
+                                </div>
+                                <div class="quantity__button quantity__button--plus js-plus">
+                                    <button>+</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="cart-p">
+                            <p>72 грн</p>
+                        </div>
+                        <div class="cart-c">
+                            <a href="#" class="remove-cart">
+                                <img src="./img/xmark-red.svg" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="cart-line">
+                        <div class="cart-i">
+                            <img src="../img/card-img.png" alt="">
+                        </div>
+                        <div class="cart-t">
+                            <span>Код: 18-318423</span>
+                            <p>Фрикционные ножницы, для створки до 12 кг. (FFH 200-350...</p>
+                            <p class="price">
+                                399.14 грн
+                            </p>
+                        </div>
+                        <div class="cart-q">
+                            <div class="quantity-field">
+                                <div class="quantity__button quantity__button--minus js-minus">
+                                    <button>-</button>
+                                </div>
+                                <div class="quantity">
+                                    <label for=""></label>
+                                    <input type="number" name="" value="2" data-id="402" min="0" step="1" size="1"
+                                           class="form-control js-item-count">
+                                </div>
+                                <div class="quantity__button quantity__button--plus js-plus">
+                                    <button>+</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="cart-p">
+                            <p>72 грн</p>
+                        </div>
+                        <div class="cart-c">
+                            <a href="#" class="remove-cart">
+                                <img src="./img/xmark-red.svg" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="cart-line">
+                        <div class="cart-i">
+                            <img src="../img/card-img.png" alt="">
+                        </div>
+                        <div class="cart-t">
+                            <span>Код: 18-318423</span>
+                            <p>Фрикционные ножницы, для створки до 12 кг. (FFH 200-350...</p>
+                            <p class="price">
+                                399.14 грн
+                            </p>
+                        </div>
+                        <div class="cart-q">
+                            <div class="quantity-field">
+                                <div class="quantity__button quantity__button--minus js-minus">
+                                    <button>-</button>
+                                </div>
+                                <div class="quantity">
+                                    <label for=""></label>
+                                    <input type="number" name="" value="2" data-id="402" min="0" step="1" size="1"
+                                           class="form-control js-item-count">
+                                </div>
+                                <div class="quantity__button quantity__button--plus js-plus">
+                                    <button>+</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="cart-p">
+                            <p>72 грн</p>
+                        </div>
+                        <div class="cart-c">
+                            <a href="#" class="remove-cart">
+                                <img src="./img/xmark-red.svg" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="cart-line">
+                        <div class="cart-i">
+                            <img src="../img/card-img.png" alt="">
+                        </div>
+                        <div class="cart-t">
+                            <span>Код: 18-318423</span>
+                            <p>Фрикционные ножницы, для створки до 12 кг. (FFH 200-350...</p>
+                            <p class="price">
+                                399.14 грн
+                            </p>
+                        </div>
+                        <div class="cart-q">
+                            <div class="quantity-field">
+                                <div class="quantity__button quantity__button--minus js-minus">
+                                    <button>-</button>
+                                </div>
+                                <div class="quantity">
+                                    <label for=""></label>
+                                    <input type="number" name="" value="2" data-id="402" min="0" step="1" size="1"
+                                           class="form-control js-item-count">
+                                </div>
+                                <div class="quantity__button quantity__button--plus js-plus">
+                                    <button>+</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="cart-p">
+                            <p>72 грн</p>
+                        </div>
+                        <div class="cart-c">
+                            <a href="#" class="remove-cart">
+                                <img src="./img/xmark-red.svg" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="total-price">
+                    <p>36 товаров на сумму: <strong>2800 грн</strong></p>
+                </div>
+                <div class="btns">
+                    <button class="btn btn--red">Оформить заказ</button>
+                    <a href="#" class="btn btn--white">Продолжить покупки</a>
+                </div>
+
             </div>
 
         </div>

@@ -295,7 +295,7 @@
     }
   }
 }
-.modal-added {
+.modal-added, .modal-fav {
   width: 100%;
   position: fixed;
   top: 117px;
@@ -322,7 +322,7 @@
 
 }
 .header.is-fixed {
-  ~ .modal-added {
+  ~ .modal-added, ~ .modal-fav {
     top: 70px;
   }
 }
