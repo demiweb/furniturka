@@ -6607,7 +6607,39 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
     }
   }
 }
-
+.contacts-container {
+  width: 100%;
+  padding-left: 30px;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+.contacts-head {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.contacts-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contacts-location {
+  width: 100%;
+  align-items: stretch;
+  justify-content: flex-start;
+  display: flex;
+  gap: 30px;
+}
+.single-location {
+  width: calc((100% / 3) - (60px / 3));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 30px;
+  border-top: 2px solid #F4F4F4;
+}
 @import "modal";
 @import "l-gallery";
 @import "media";

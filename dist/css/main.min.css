@@ -7031,6 +7031,64 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
       line-height: 140%;
       color: #707070; }
 
+.contacts-container {
+  width: 100%;
+  padding-left: 30px;
+  padding-top: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.contacts-head {
+  width: 100%;
+  margin-bottom: 30px; }
+
+.contacts-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.contacts-location {
+  width: 100%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px; }
+
+.single-location {
+  width: calc((100% / 3) - (60px / 3));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 30px;
+  border-top: 2px solid #F4F4F4; }
+
 .modal-thanks {
   width: 100%;
   max-width: 450px;
