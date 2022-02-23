@@ -1101,6 +1101,18 @@
   }
 }
 @media screen and (max-width: 992px) {
+  .user-header {
+    .cabinet-name {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      .text {
+        p {
+          margin-top: 0;
+        }
+      }
+    }
+  }
   .checkout-header .logo {
     height: auto;
     width: 100%;

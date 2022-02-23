@@ -2946,7 +2946,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   height: 100%; }
-  .user-header a {
+  .user-header a:not(.cabinet-name) {
     width: 100%;
     font-style: normal;
     font-weight: normal;
@@ -2964,10 +2964,28 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
-    .user-header a img {
+    .user-header a:not(.cabinet-name) img {
       width: 24px;
       height: 24px;
       margin-right: 3px; }
+  .user-header .cabinet-name {
+    text-decoration: none; }
+    .user-header .cabinet-name .img-upload {
+      width: 48px;
+      height: 48px; }
+    .user-header .cabinet-name .text {
+      margin-left: 18px; }
+    .user-header .cabinet-name p {
+      color: #fff;
+      font-size: 14px;
+      margin-left: 0;
+      line-height: 1.2; }
+    .user-header .cabinet-name span {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 130%;
+      color: #ACACAC; }
 
 .header-menu__content {
   width: 100%;
@@ -9785,6 +9803,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     top: 1px; } }
 
 @media screen and (max-width: 992px) {
+  .user-header .cabinet-name {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .user-header .cabinet-name .text p {
+      margin-top: 0; }
   .checkout-header .logo {
     height: auto;
     width: 100%; }

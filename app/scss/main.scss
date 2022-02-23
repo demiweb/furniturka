@@ -2726,7 +2726,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
   justify-content: flex-start;
   height: 100%;
 
-  a {
+  a:not(.cabinet-name) {
     width: 100%;
     font-style: normal;
     font-weight: normal;
@@ -2743,6 +2743,30 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
       height: 24px;
       margin-right: 3px;
     }
+  }
+  .cabinet-name {
+    text-decoration: none;
+    .img-upload {
+      width: 48px;
+      height: 48px;
+    }
+    .text {
+      margin-left: 18px;
+    }
+    p {
+      color: #fff;
+      font-size: 14px;
+      margin-left:0 ;
+      line-height: 1.2;
+    }
+    span {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 130%;
+      color: #ACACAC;
+    }
+
   }
 }
 
