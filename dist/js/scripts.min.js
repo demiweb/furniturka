@@ -1004,7 +1004,12 @@ function showRevAll() {
 }
 
 showRevAll();
+$(document).ready(function() {
+    if (document.querySelector('.control-sort select')) {
+        $('.control-sort select').niceSelect();
+    }
 
+});
 let btnGoRevs = [...document.querySelectorAll('.product-info__tags .rate p')];
 function goToRevs() {
     if (btnGoRevs.length) {

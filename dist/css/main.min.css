@@ -228,6 +228,18 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
       -ms-flex-pack: start;
           justify-content: flex-start; }
 
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background: #FAFAFA; }
+
+::-webkit-scrollbar-thumb {
+  background: #4F4F4F;
+  border: 1px solid #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px; }
+
 .footer-top {
   width: 100%;
   background: #383838; }
@@ -399,7 +411,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
 
 .cat-hero {
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   overflow: hidden; }
   .cat-hero .container {
     display: -webkit-box;
@@ -624,7 +636,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
         white-space: nowrap;
         font-style: normal;
         font-weight: normal;
-        font-size: 12px;
+        font-size: 15px;
         line-height: 14px;
         text-align: center;
         text-transform: uppercase;
@@ -941,7 +953,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
                     justify-content: flex-start;
             font-style: normal;
             font-weight: normal;
-            font-size: 14px;
+            font-size: 15px;
             line-height: 130%;
             color: #333333;
             -webkit-transition: color 0.3s ease, -webkit-box-shadow 0.3s ease;
@@ -990,7 +1002,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
                 justify-content: flex-start;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 17px;
         color: #353535;
         text-decoration: none;
@@ -1086,7 +1098,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
 
 .header-search {
   width: 100%;
-  max-width: 40%;
+  max-width: 45%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1291,7 +1303,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
 .header-phone__drop {
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   background: #ffffff;
   -webkit-box-shadow: 0 4px 45px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 45px rgba(0, 0, 0, 0.25);
@@ -1717,7 +1729,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
   .card-inner .code {
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
+    font-size: 15px;
     line-height: 14px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1854,7 +1866,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
         flex-shrink: 0;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 130%;
     color: #242424;
     display: -webkit-box;
@@ -1943,11 +1955,11 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
   background: #FAFAFA;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 100px 0; }
+  padding: 50px 0; }
 
 .home-section {
   width: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   .home-section:last-child {
@@ -2603,7 +2615,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
 
 .default-section {
   width: 100%;
-  padding: 100px 0; }
+  padding: 50px 0; }
 
 .brands-list {
   width: 100%;
@@ -2762,7 +2774,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
 
 .seo-section {
   width: 100%;
-  padding: 100px 0;
+  padding: 50px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #FAFAFA; }
@@ -2810,7 +2822,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
   .seo-block a {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 15px;
     color: #3E77AA; }
   .seo-block p, .seo-block li {
@@ -2867,7 +2879,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
 .show-seo {
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 15px;
   color: #3E77AA;
   cursor: pointer;
@@ -2905,18 +2917,6 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
         -ms-transform: translate(0, 0);
             transform: translate(0, 0);
     pointer-events: auto; }
-
-::-webkit-scrollbar {
-  width: 7px;
-  height: 7px;
-  background: #FAFAFA; }
-
-::-webkit-scrollbar-thumb {
-  background: #4F4F4F;
-  border: 1px solid #fff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 4px; }
 
 .header-menu__log {
   background: #4F4F4F;
@@ -3174,7 +3174,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
 
 .footer-container {
   width: 100%;
-  padding: 90px 0;
+  padding: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3420,7 +3420,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
 
 .side-container {
   width: 100%;
-  margin-bottom: 100px; }
+  margin-bottom: 50px; }
   .side-container .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3695,7 +3695,125 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
   -ms-flex-pack: start;
   justify-content: flex-start;
   margin-left: 0px;
+  z-index: 2;
   margin-right: 22px; }
+  .control-sort .nice-select {
+    height: 42px;
+    width: 166px;
+    padding: 14px 12px;
+    -webkit-transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    -o-transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    border: 1px solid #333333;
+    cursor: pointer;
+    color: #333333;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .control-sort .nice-select::after {
+      width: 5px;
+      height: 9px;
+      background: url(../img/arr-r-b.svg) no-repeat center/100%;
+      position: absolute;
+      display: inline-block;
+      content: '';
+      right: 5px;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          -ms-transform: translate(-50%, -50%) rotate(90deg);
+              transform: translate(-50%, -50%) rotate(90deg);
+      -webkit-transition: -webkit-filter 0.3s ease;
+      transition: -webkit-filter 0.3s ease;
+      -o-transition: filter 0.3s ease;
+      transition: filter 0.3s ease;
+      transition: filter 0.3s ease, -webkit-filter 0.3s ease; }
+    .control-sort .nice-select.open .list {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto; }
+    .control-sort .nice-select .list {
+      position: absolute;
+      top: 100%;
+      left: -1px;
+      width: calc(100% + 2px);
+      border: 1px solid #333333;
+      background: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      -webkit-transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+      -o-transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+      transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none; }
+      .control-sort .nice-select .list li {
+        width: 100%;
+        padding: 12px 8px;
+        height: 38px;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        font-size: 15px;
+        line-height: 1;
+        color: #333333;
+        border-bottom: 1px solid #333333;
+        -webkit-transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+        -o-transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+        transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease; }
+        .control-sort .nice-select .list li:last-child {
+          border-bottom: none !important; }
+        .control-sort .nice-select .list li.selected, .control-sort .nice-select .list li:hover {
+          background: #333333;
+          border-bottom: 1px solid #333333;
+          color: #fff;
+          -webkit-transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+          -o-transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+          transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease; }
+    .control-sort .nice-select:hover {
+      background: #333333;
+      color: #fff;
+      border: 1px solid #333333;
+      -webkit-transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+      -o-transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+      transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease; }
+      .control-sort .nice-select:hover::after {
+        -webkit-transition: -webkit-filter 0.3s ease;
+        transition: -webkit-filter 0.3s ease;
+        -o-transition: filter 0.3s ease;
+        transition: filter 0.3s ease;
+        transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+        -webkit-filter: invert(1);
+                filter: invert(1); }
+    .control-sort .nice-select span {
+      display: inline-block;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      font-size: 15px;
+      line-height: 1;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 100%;
+      overflow: hidden; }
   .control-sort p {
     font-style: normal;
     font-weight: 500;
@@ -3725,6 +3843,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
     line-height: 120%;
     color: #3b6d9a;
     outline: 0;
+    display: none;
     background: rgba(255, 255, 255, 0);
     border: none;
     border-bottom: 1px dashed #3b6d9a; }
@@ -4248,7 +4367,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
   .product-rate .code {
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 14px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4295,7 +4414,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
 
 .units-footer {
   width: 100%;
-  padding: 100px 0;
+  padding: 50px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -5061,7 +5180,7 @@ p, h1, ul, ol, h2, h3, h4, h5, h6 {
 
 .classic-section {
   width: 100%;
-  padding: 90px 0;
+  padding: 50px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -7402,7 +7521,7 @@ input[type=number] {
 
 .map {
   width: 100%;
-  margin: 50px 0 100px; }
+  margin: 50px 0 50px; }
 
 .map-container {
   width: 100%;
@@ -7654,7 +7773,7 @@ input[type=number] {
 
 .checkout {
   width: 100%;
-  padding: 70px 0;
+  padding: 60px 0;
   margin-bottom: 0 !important; }
 
 .checkout-page main {
@@ -8098,7 +8217,7 @@ input[type=number] {
   .order-item p {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 165%;
     color: #888888;
     display: inline-block;
@@ -8108,7 +8227,7 @@ input[type=number] {
   .order-item span {
     font-style: normal;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.2;
     color: #353535;
     display: -webkit-box;
@@ -8714,7 +8833,7 @@ input[type=number] {
   .check-cont span {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 165%;
     color: #888888;
     display: -webkit-box;
@@ -8731,7 +8850,7 @@ input[type=number] {
       position: absolute;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
-      top: 1px;
+      top: 3px;
       left: 0; }
 
 .input-cont {
@@ -8752,7 +8871,7 @@ input[type=number] {
   margin-bottom: 9px;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 165%;
   color: #888888;
   position: relative; }
@@ -9107,7 +9226,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .header-menu {
     width: 300px; }
   .header-search {
-    max-width: 270px; }
+    max-width: 45%; }
   .header-phone a {
     font-size: 14px; }
   .header-lang span {
@@ -11131,6 +11250,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 12px; }
   .control-sort select {
     font-size: 11px; }
+  .control-sort .nice-select {
+    height: 34px;
+    padding: 4px 14px; }
+    .control-sort .nice-select .list li {
+      height: 34px; }
   .control-line {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
