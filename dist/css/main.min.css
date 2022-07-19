@@ -7122,6 +7122,56 @@ input[type=number] {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
+  .delivery-container.about-us__cont {
+    position: relative; }
+    .delivery-container.about-us__cont .text {
+      max-width: 427px; }
+    .delivery-container.about-us__cont .right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: calc(100% - 575px); }
+      .delivery-container.about-us__cont .right blockquote {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: #707070;
+        width: calc(100% - 70px);
+        margin: 0;
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        bottom: 45px;
+        background: #fff;
+        padding: 32px 30px 32px 80px; }
+        .delivery-container.about-us__cont .right blockquote::before {
+          position: absolute;
+          left: 25px;
+          width: 45px;
+          height: 45px;
+          top: 50%;
+          -webkit-transform: translate(0, -50%);
+              -ms-transform: translate(0, -50%);
+                  transform: translate(0, -50%);
+          display: inline-block;
+          content: '';
+          background: url("../img/qute-bg.svg") no-repeat center/100%; }
+      .delivery-container.about-us__cont .right .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden; }
+        .delivery-container.about-us__cont .right .img img {
+          width: 100%;
+          height: 100%;
+          -o-object-fit: cover;
+             object-fit: cover; }
 
 .delivery-head {
   min-height: 525px;
@@ -7143,6 +7193,10 @@ input[type=number] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: url("../img/del-bg-big.png") no-repeat center/cover, #FAFAFA; }
+  .delivery-head.about-us {
+    background: #FAFAFA; }
+    .delivery-head.about-us .text span {
+      max-width: 336px; }
   .delivery-head .text {
     width: 100%;
     max-width: 478px;
@@ -7190,7 +7244,10 @@ input[type=number] {
       font-weight: normal;
       font-size: 14px;
       line-height: 140%;
-      color: #707070; }
+      color: #707070;
+      margin-bottom: 30px; }
+      .delivery-head .text p:last-child {
+        margin-bottom: 0; }
       .delivery-head .text p strong {
         font-size: 16px;
         font-weight: bold;
@@ -9240,6 +9297,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 300px; } }
 
 @media screen and (max-width: 1300px) {
+  .delivery-container.about-us__cont .text {
+    max-width: 390px; }
+  .delivery-container.about-us__cont .right {
+    width: calc(100% - 470px); }
+    .delivery-container.about-us__cont .right blockquote {
+      width: calc(100% - 30px); }
   .delivery-info {
     padding: 25px;
     margin-bottom: 50px;
@@ -9576,6 +9639,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: auto; } }
 
 @media screen and (max-width: 1200px) {
+  .delivery-container.about-us__cont .right blockquote {
+    padding: 20px 20px 20px 50px;
+    font-size: 14px;
+    line-height: 1.1; }
+    .delivery-container.about-us__cont .right blockquote::before {
+      left: 10px;
+      width: 30px;
+      height: 30px; }
+  .delivery-container.about-us__cont .text {
+    max-width: 320px; }
+  .delivery-container.about-us__cont .right {
+    width: calc(100% - 390px); }
   .checkout__thanks {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -10275,6 +10350,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: none; } }
 
 @media screen and (max-width: 922px) {
+  .delivery-container.about-us__cont .text {
+    max-width: none; }
+  .delivery-container.about-us__cont .right {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: 500px;
+    margin-top: 30px; }
   .checkout-info__content .cart-q {
     padding: 10px 30px; }
   .cabinet-name {
@@ -10711,6 +10796,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   outline: none !important; }
 
 @media screen and (max-width: 600px) {
+  .delivery-container.about-us__cont .right {
+    height: 300px;
+    width: calc(100% + 50px);
+    margin-left: -25px;
+    margin-right: -25px; }
+    .delivery-container.about-us__cont .right blockquote {
+      bottom: 20px;
+      font-size: 12px; }
   .added-footer > p {
     font-size: 14px;
     line-height: 1.2; }
